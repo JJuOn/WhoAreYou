@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Who Are You? - 하스스톤 멀리건 도우미</title>
+
+    <!-- 부트스트랩 -->
+    <link href="../../static/bootstrap-3.3.2-dist/css/bootstrap.min.css?ver=1" rel="stylesheet">
+    <link href="../../static/main.css" rel="stylesheet">
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav class="navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" aria-expanded="false" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Who Are You?</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                </ul>
+                <div class="navbar-right">
+                    <a href="#"><button class="btn navbar-btn" style="color:#000;">로그아웃</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container show-grid" >
+        <div class="padding" style="width:100px"></div>
+        <h3 class="form-signin-heading">상대편의 직업을 선택해 주세요</h3>
+        <br>
+        <br>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/c/c5/Garrosh_Hellscream%28635%29.png?version=bab934001bb784a94c59a47823d535a7" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="전사"/>전사
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4b/Thrall%28319%29.png?version=adcee55715548b949a7d973c2fddbd95" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="주술사"/>주술사
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a4/Valeera_Sanguinar%282%29.png?version=84a816910b223169eb14cc93c20437b2" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="도적"/>도적
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4d/Uther_Lightbringer%28257%29.png?version=b45ade5ac3fdd2579160fe5d7b7c1b20" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="성기사"/>성기사
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a0/Rexxar%28484%29.png?version=c21b57837db15d20cc814f2bf45682b6" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="사냥꾼"/>사냥꾼
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/f/fa/Malfurion_Stormrage%28621%29.png?version=b3f5a40e33f33d32995f3becbdd7aa94" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="드루이드"/>드루이드
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row" style="text-align: center;">
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/0/0a/Gul%27dan%28618%29.png?version=90f421585c6f2d493ba94e259a76190e" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="흑마법사"/>흑마법사
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/3c/Jaina_Proudmoore%28320%29.png?version=75868a59a53f90bce829edeb66126b73" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="마법사"/>마법사
+            </div>
+            <div class="col-md-4">
+                <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/8/80/Anduin_Wrynn%28110%29.png?version=ba8ecc39b3fdd4a2ede72e046c434454" style="width:150px;height:200px;"/>
+                <br>
+                <input type="radio" name="checkOpponent" value="사제"/>사제
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-2">
+                <input class="btn btn-lg btn-primary btn-block" type="button" value="확인"/>
+            </div>
+            <div class="col-md-5"></div>
+        </div>
+    </div>
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="../../static/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
