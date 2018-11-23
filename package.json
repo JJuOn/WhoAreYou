@@ -15,9 +15,12 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "request-promise": "^4.2.2"
   }
 }
