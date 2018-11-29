@@ -9,6 +9,8 @@ const morgan=require('morgan')
 const cheerio=require('cheerio')
 const mysql=require('mysql')
 require('dotenv').config()
+app.use('/api',require('./api'))
+const dbconfig=require('dbconfig')
 const app=express()
 
 app.use(morgan('[:date[iso]] :method :status :url :response-time(ms) :user-agent'))
@@ -23,13 +25,7 @@ app.use(function (req, res, next) {
     next()
 })
 
-const connection=mysql.createConnection({
-    host:process.env.DB_HOST,
-    user:process.env.DB_USER,
-    password:process.env.DB_PASSWORD,
-    database:'user',
-    port:''
-})
+const connection=mysql.createConnection(dbconfig)
 
 let allCards=[]
 fs.readFile('cardskoKR.json',(err,data)=>{
@@ -50,8 +46,10 @@ app.get('/main',(req,res)=>{
     if(!req.session.sid)
         res.redirect('/login')
     else {
-        fs.readFile('./views/main')
-        res.writeHead(200, {'Content-Type': 'text/html'})
+        fs.readFile('./views/main',(err,data)=>{
+            res.writeHead(200, {'Content-Type': 'text/html'})
+            res.end(data)
+        })
     }
 })
 
