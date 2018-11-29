@@ -2,4 +2,12 @@
 
 node_modules
 
-오픈소스SW 프로젝트.txt
+*.txt
+
+.env
+
+*.log
+
+npm-debug.log*
+
+
