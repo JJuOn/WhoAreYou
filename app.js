@@ -32,7 +32,10 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/main',(req,res)=>{
-    fs.readFile('./views/main')
-    res.writeHead(200,{'Content-Type':'text/html'})
-
+    if(!req.session.sid)
+        res.redirect('/login')
+    else {
+        fs.readFile('./views/main')
+        res.writeHead(200, {'Content-Type': 'text/html'})
+    }
 })
