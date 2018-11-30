@@ -1,11 +1,10 @@
+'use strict'
+
 const express=require('express')
 const session=require('express-session')
 const findById=require('../../database/user/findById')
-const mysql=require('mysql')
+const mysql=require('../../mysql')
 const bcrypt=require('bcrypt-nodejs')
-const dbconfig=require('../../dbconfig')
-const connection=mysql.createConnection(dbconfig)
-connection.connect()
 
 exports.SignUp=(req,res)=>{
     const userId=req.body.userId
@@ -21,28 +20,66 @@ exports.SignUp=(req,res)=>{
             else resolve()
         })
     }
-    const SignUp=()=>{
-        const user=findById(userId)
-        if(!user){
-            const hash=bcrypt.hashSync(password,bcrypt.genSaltSync(10),null)
-            connection.query(`insert into user (userId,password) values (${userId},${hash});`,(err,results,fields)=>{
+    const UserCheck=()=>{
+        let user={}
+        const findUser=async ()=>{
+            try{
+                user= await findById.findById(userId)
+                console.log(`user in UserCheck : ${JSON.stringify(user)}`)
+                return user
+            }
+            catch(err){
+                return Promise.reject(err)
+            }
+        }
+        return findUser()
+        /*
+        mysql.getConnection((err,connection)=>{
+            if(err)
+                return reject({
+                    code: 'connect_db_error',
+                    message: 'connect_db_error'
+                })
+            connection.query(`select * from user where userId=\'${userId}\'`,(err,result,fields)=>{
                 if(err){
-                    throw err
+                    connection.release()
+                    return reject({
+                        code:'select_db_error',
+                        message:'select db error'
+                    })
                 }
                 else{
-                    console.log(results)
+                    connection.release()
+                    console.log('1 result in findById ',result)
+                    return result
                 }
             })
-        }
-        else{
-            return reject({
-                code:'User_already_exists',
-                message:'User already exists'
+        })
+        */
+    }
+
+    const SignUp=(user)=>{
+        if(user[0]!=null){
+            return Promise.reject({
+                code:'User_Already_Exists',
+                message:'User Already Exists'
             })
         }
+        const hash=bcrypt.hashSync(password,bcrypt.genSaltSync(10),null)
+        mysql.getConnection((err,connection)=>{
+            if(err)
+                throw err
+            connection.query(`insert into user (userId,password) values (\'${userId}\',\'${hash}\');`,(err,results,fields)=>{
+                if(err)
+                    throw err
+                connection.release()
+            })
+        })
+
     }
 
     DataCheck()
+        .then(UserCheck)
         .then(SignUp)
         .then(()=>{
             return res.status(200).json({userId:userId})

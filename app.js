@@ -7,15 +7,12 @@ const bcrypt=require('bcrypt-nodejs')
 const rp=require('request-promise')
 const morgan=require('morgan')
 const cheerio=require('cheerio')
-const mysql=require('mysql')
 require('dotenv').config()
-app.use('/api',require('./api'))
-const dbconfig=require('dbconfig')
 const app=express()
 
 app.use(morgan('[:date[iso]] :method :status :url :response-time(ms) :user-agent'))
 
-app.use(express.static(path.join(__dirname, '/static')))
+app.use('/static',express.static(path.join(__dirname, '/static')))
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(function (req, res, next) {
@@ -25,7 +22,7 @@ app.use(function (req, res, next) {
     next()
 })
 
-const connection=mysql.createConnection(dbconfig)
+app.use('/api',require('./api'))
 
 let allCards=[]
 fs.readFile('cardskoKR.json',(err,data)=>{
@@ -46,11 +43,25 @@ app.get('/main',(req,res)=>{
     if(!req.session.sid)
         res.redirect('/login')
     else {
-        fs.readFile('./views/main',(err,data)=>{
+        fs.readFile('./views/html/main.html',(err,data)=>{
             res.writeHead(200, {'Content-Type': 'text/html'})
             res.end(data)
         })
     }
+})
+
+app.get('/signup',(req,res)=>{
+    fs.readFile('./views/html/signup.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.end(data)
+    })
+})
+
+app.get('/login',(req,res)=>{
+    fs.readFile('./views/html/login.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.end(data)
+    })
 })
 
 app.listen(process.env.SERVER_PORT || 3000,()=>{
