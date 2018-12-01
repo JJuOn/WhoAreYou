@@ -1,6 +1,15 @@
 const findById=require('../../database/user/findById')
 const mysql=require('../../mysql')
 const bcrypt=require('bcrypt-nodejs')
+const session=require('express-session')
+const app=require('express')()
+
+app.use(session({
+    secret:'ambc@!vsmkv#!&*!#EDNAnsv#!$()_*#@',
+    resave:false,
+    saveUninitialized:true
+}))
+
 
 exports.Login=(req,res)=>{
     const userId=req.body.userId
@@ -21,27 +30,38 @@ exports.Login=(req,res)=>{
     }
 
     const IdCheck=()=>{
-        console.log(2)
-        resolve(findById.findById(userId))
+        let user={}
+        const findUser= async ()=>{
+            try{
+                user =await findById.findById(userId)
+                return user
+            }
+            catch (err) {
+                return Promise.reject(err)
+            }
+        }
+        return findUser()
     }
 
     const PwCheck=(user)=>{
-        console.log(user)
-        if (!user){
+        if (user[0]==null){
             console.log('2 err')
-            return reject({
+            return Promise.reject({
                 code:'id_wrong',
                 message:'id wrong'
             })
         }
         console.log('3')
-        if(bcrypt.compareSync(password,user.password)){
-            console.log(`Login : ${userId}`)
-            resolve()
+        if(bcrypt.compareSync(password,user[0].password)){
+            console.log(`3 success\nLogin : ${userId}`)
+            req.session.sid=userId
+            req.session.save(()=>{
+                res.status(200).json({userId:userId})
+            })
         }
         else{
             console.log('3 err')
-            return reject({
+            return Promise.reject({
                 code:'pw_wrong',
                 message:'pw wrong'
             })
@@ -51,11 +71,8 @@ exports.Login=(req,res)=>{
     DataCheck()
         .then(IdCheck)
         .then(PwCheck)
-        .then(()=>{
-            req.session.sid=userId
-            res.status(200).json({userId:userId})
-        })
         .catch((err)=>{
+            console.log(err)
             res.status(500).json(err.message|err)
         })
 }

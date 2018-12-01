@@ -21,6 +21,11 @@ app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Headers', 'content-type, x-access-token')
     next()
 })
+app.use(session({
+    secret:'ambc@!vsmkv#!&*!#EDNAnsv#!$()_*#@',
+    resave:false,
+    saveUninitialized:true
+}))
 
 app.use('/api',require('./api'))
 
@@ -40,6 +45,7 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/main',(req,res)=>{
+    console.log(`GET /main\ncurrent sid : ${req.session.sid}`)
     if(!req.session.sid)
         res.redirect('/login')
     else {
@@ -59,6 +65,33 @@ app.get('/signup',(req,res)=>{
 
 app.get('/login',(req,res)=>{
     fs.readFile('./views/html/login.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.end(data)
+    })
+})
+
+app.post('/logout',(req,res)=>{
+    console.log('logout')
+    delete req.session.sid
+    res.status(200).json({result:'Logout Successful'})
+})
+
+app.get('/decklist',(req,res)=>{
+    fs.readFile('./views/html/decklist.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.end(data)
+    })
+})
+
+app.get('/ingame',(req,res)=>{
+    fs.readFile('./views/html/ingame.html',(err,data)=>{
+        res.writeHead(200,{'Content-Type':'text/html'})
+        res.end(data)
+    })
+})
+
+app.get('/newdeck',(req,res)=>{
+    fs.readFile('./views/html/newdeck.html',(err,data)=>{
         res.writeHead(200,{'Content-Type':'text/html'})
         res.end(data)
     })

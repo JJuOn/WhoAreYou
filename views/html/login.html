@@ -36,7 +36,7 @@
                         window.location.href='/main'
                     },
                     error:function(result){
-                        alert(`로그인 실패!\nmessage:${result.message}`)
+                        alert(`로그인 실패!\nmessage:${result['message']}`)
                         return false
                     }
                 })

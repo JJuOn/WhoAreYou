@@ -18,7 +18,7 @@ exports.findById=(userId)=>{
                 }
                 else{
                     connection.release()
-                    console.log('1 result in findById ',result)
+                    console.log('result in findById ',result)
                     resolve(result)
                 }
             })

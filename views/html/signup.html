@@ -42,7 +42,7 @@
                             window.location.href='/login'
                         },
                         error:function(result){
-                            alert(`회원가입 실패!\nmessage:${result.message}`)
+                            alert(`회원가입 실패!\nmessage:${result['message']}`)
                             return false
                         }
                     })
