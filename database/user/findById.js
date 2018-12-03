@@ -1,4 +1,4 @@
-const mysql=require('../../mysql')
+const mysql=require('../mysql')
 
 exports.findById=(userId)=>{
     return new Promise((resolve,reject)=>{

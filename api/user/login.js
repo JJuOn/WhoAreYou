@@ -1,15 +1,5 @@
 const findById=require('../../database/user/findById')
-const mysql=require('../../mysql')
 const bcrypt=require('bcrypt-nodejs')
-const session=require('express-session')
-const app=require('express')()
-
-app.use(session({
-    secret:'ambc@!vsmkv#!&*!#EDNAnsv#!$()_*#@',
-    resave:false,
-    saveUninitialized:true
-}))
-
 
 exports.Login=(req,res)=>{
     const userId=req.body.userId
@@ -17,9 +7,7 @@ exports.Login=(req,res)=>{
 
     const DataCheck=()=>{
         return new Promise((resolve,reject)=>{
-            console.log('1')
             if(!userId || !password){
-                console.log('1 err')
                 return reject({
                     code: 'request_body_error',
                     message: 'request body is not defined'
@@ -45,22 +33,19 @@ exports.Login=(req,res)=>{
 
     const PwCheck=(user)=>{
         if (user[0]==null){
-            console.log('2 err')
             return Promise.reject({
                 code:'id_wrong',
                 message:'id wrong'
             })
         }
-        console.log('3')
         if(bcrypt.compareSync(password,user[0].password)){
-            console.log(`3 success\nLogin : ${userId}`)
+            console.log(`Login : ${userId}`)
             req.session.sid=userId
             req.session.save(()=>{
                 res.status(200).json({userId:userId})
             })
         }
         else{
-            console.log('3 err')
             return Promise.reject({
                 code:'pw_wrong',
                 message:'pw wrong'

@@ -32,6 +32,30 @@
                     }
                 })
             })
+            $('#newDeckButton').click(function(){
+                var data=new Object()
+                data.deckTitle=$('#deckTitle').val()
+                data.deckCode=$('#deckCode').val()
+                const stringData=JSON.stringify(data)
+                console.log(stringData)
+                $.ajax({
+                    type:'POST',
+                    url:'/api/deck/newdeck',
+                    data:stringData,
+                    dataType:'JSON',
+                    contentType:'application/json; charset=utf-8',
+                    traditional:true,
+                    processdata:false,
+                    success:function(result){
+                        alert('덱 생성 성공!')
+                        window.location.href='/decklist'
+                    },
+                    error:function(result){
+                        alert(`덱 생성 실패!\nmessage:${result['message']}`)
+                        return false
+                    }
+                })
+            })
         })
     </script>
 </head>
@@ -61,11 +85,13 @@
         <div class="padding" style="width:100px"></div>
         <div class="container" style="width:50%;">
             <h3 class="form-signin-heading">덱 추가</h3>
-            <label class="sr-only" for="deckTitle">덱 이름</label>
-            <input class="form-control" id="deckTitle" autofocus="" required="" type="text" placeholder="덱 이름" name="userId">
-            <label class="sr-only" for="deckCode">덱 코드</label>
-            <textarea class="form-control" id="deckCode" required="" placeholder="덱 코드" name="password" style="resize:none;height:150px;"></textarea>
-            <input type="button" class="btn btn-primary btn-block" value="확인" />
+            <form id="addDeckForm">
+                <label class="sr-only" for="deckTitle">덱 이름</label>
+                <input class="form-control" id="deckTitle" autofocus="" required="" type="text" placeholder="덱 이름" name="deckTitle">
+                <label class="sr-only" for="deckCode">덱 코드</label>
+                <textarea class="form-control" id="deckCode" required="" placeholder="덱 코드" style="resize:none;height:150px;" name="deckCode"></textarea>
+            </form>
+            <input type="button" class="btn btn-primary btn-block" id="newDeckButton" value="확인" />
         </div>
     </div>
 

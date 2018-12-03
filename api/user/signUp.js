@@ -3,7 +3,7 @@
 const express=require('express')
 const session=require('express-session')
 const findById=require('../../database/user/findById')
-const mysql=require('../../mysql')
+const mysql=require('../../database/mysql')
 const bcrypt=require('bcrypt-nodejs')
 
 exports.SignUp=(req,res)=>{
@@ -44,11 +44,9 @@ exports.SignUp=(req,res)=>{
         }
         const hash=bcrypt.hashSync(password,bcrypt.genSaltSync(10),null)
         mysql.getConnection((err,connection)=>{
-            if(err)
-                throw err
+            if(err) throw err
             connection.query(`insert into user (userId,password) values (\'${userId}\',\'${hash}\');`,(err,results,fields)=>{
-                if(err)
-                    throw err
+                if(err) throw err
                 connection.release()
             })
         })
