@@ -28,10 +28,10 @@ exports.AddCards=(deckId,cards)=>{
                         if (cardEnUS[i].name === cardName) {
                             console.log(cardEnUS[i].dbfId)
                             cardId = cardEnUS[i].dbfId
+                            cardName=cardName.replace('\'','\'\'')
                             break
                         }
                     }
-
                     connection.query(`insert into card (deckId,cardId,cardCost,cardName,cardNum) values (\'${deckId}\',\'${cardId}\',\'${cardCost}\',\'${cardName}\',\'${cardNum}\')`, (err, results, fields) => {
                         //
                         if (err) throw err
