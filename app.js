@@ -7,6 +7,7 @@ const bcrypt=require('bcrypt-nodejs')
 const rp=require('request-promise')
 const morgan=require('morgan')
 const cheerio=require('cheerio')
+const mysqlApostrophe=require('mysql-apostrophe')
 require('dotenv').config()
 const app=express()
 
@@ -26,6 +27,8 @@ app.use(session({
     resave:false,
     saveUninitialized:true
 }))
+
+app.use(mysqlApostrophe)
 
 app.use('/api',require('./api'))
 
@@ -77,24 +80,39 @@ app.post('/logout',(req,res)=>{
 })
 
 app.get('/decklist',(req,res)=>{
-    fs.readFile('./views/html/decklist.html',(err,data)=>{
-        res.writeHead(200,{'Content-Type':'text/html'})
-        res.end(data)
-    })
+    if(!req.session.sid)
+        res.redirect('/login')
+    else{
+        fs.readFile('./views/html/decklist.html',(err,data)=>{
+            res.writeHead(200,{'Content-Type':'text/html'})
+            res.end(data)
+        })
+    }
+
 })
 
 app.get('/ingame',(req,res)=>{
-    fs.readFile('./views/html/ingame.html',(err,data)=>{
-        res.writeHead(200,{'Content-Type':'text/html'})
-        res.end(data)
-    })
+    if(!req.session.sid)
+        res.redirect('/login')
+    else{
+        fs.readFile('./views/html/ingame.html',(err,data)=>{
+            res.writeHead(200,{'Content-Type':'text/html'})
+            res.end(data)
+        })
+    }
+
 })
 
 app.get('/newdeck',(req,res)=>{
-    fs.readFile('./views/html/newdeck.html',(err,data)=>{
-        res.writeHead(200,{'Content-Type':'text/html'})
-        res.end(data)
-    })
+    if(!req.session.sid)
+        res.redirect('/login')
+    else{
+        fs.readFile('./views/html/newdeck.html',(err,data)=>{
+            res.writeHead(200,{'Content-Type':'text/html'})
+            res.end(data)
+        })
+    }
+
 })
 
 app.listen(process.env.SERVER_PORT || 3000,()=>{
