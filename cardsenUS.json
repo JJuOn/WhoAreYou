@@ -5754,7 +5754,7 @@
     "name": "Majordomo Executus",
     "rarity": "LEGENDARY",
     "set": "BRM",
-    "text": "<b>Deathrattle:</b> Replace your hero with Ragnaros, the Firelord.",
+    "text": "<b>Deathrattle:</b> Replace your hero with Ragnaros the Firelord.",
     "type": "MINION"
   },
   {
@@ -22140,7 +22140,7 @@
     "collectible": true,
     "cost": 2,
     "dbfId": 42651,
-    "flavor": "The Druid awoke from troubling dreams to find herself transformed into a giant spider.",
+    "flavor": "The druid awoke from troubling dreams to find herself transformed into a giant spider.",
     "health": 2,
     "id": "ICC_051",
     "mechanics": [
@@ -29197,7 +29197,7 @@
     "name": "Kingsbane",
     "rarity": "LEGENDARY",
     "set": "LOOTAPALOOZA",
-    "text": "[x]<b>Deathrattle:</b> Shuffle\nthis into your deck.\nIt keeps any\nenchantments.",
+    "text": "[x]Always keeps\nenchantments.\n<b>Deathrattle:</b> Shuffle this\ninto your deck.",
     "type": "WEAPON"
   },
   {
@@ -32442,6 +32442,2696 @@
     "rarity": "LEGENDARY",
     "set": "HOF",
     "text": "<b>Battlecry:</b> Give both players the power to ROCK! (with a Power Chord card)",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49049,
+    "flavor": "One player's trash is another's “Best In Slot”.",
+    "health": 5,
+    "id": "TRL_010",
+    "mechanics": [
+      "OVERKILL",
+      "STEALTH"
+    ],
+    "name": "Half-Time Scavenger",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Stealth</b>\n<b>Overkill</b>: Gain 3 Armor.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49051,
+    "entourage": [
+      "CS2_052",
+      "CS2_050",
+      "NEW1_009",
+      "CS2_051"
+    ],
+    "flavor": "Trolls are the first group to have a totem survive atmospheric re-entry.",
+    "id": "TRL_012",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Totemic Smash",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Deal $2 damage. <b>Overkill</b>: Summon a basic Totem.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "David Kegg",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49066,
+    "flavor": "Takes ten percent off the top.",
+    "health": 3,
+    "id": "TRL_015",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Ticket Scalper",
+    "race": "PIRATE",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Overkill</b>: Draw 2 cards.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jiajun Tian",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 49088,
+    "flavor": "An eye for sore sights.",
+    "health": 4,
+    "id": "TRL_020",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "Sightless Ranger",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Rush</b>\n<b>Overkill</b>: Summon two 1/1 Bats.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49800,
+    "flavor": "When snakes get sick, they get sent to the Serpent Ward.",
+    "health": 2,
+    "id": "TRL_057",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Serpent Ward",
+    "race": "TOTEM",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "At the end of your turn,\ndeal 2 damage to the enemy hero.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49802,
+    "flavor": "When you're awake at 3 AM and can't stop thinking about that time you called your teacher \"mom.\"",
+    "id": "TRL_058",
+    "name": "Haunting Visions",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "The next spell you cast this turn costs (3) less. <b>Discover</b> a spell.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49803,
+    "flavor": "It's the bane of freshly mopped floors everywhere.",
+    "health": 3,
+    "id": "TRL_059",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Bog Slosher",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "race": "ELEMENTAL",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "targetingArrowText": "Return a minion to your hand.",
+    "text": "<b>Battlecry:</b> Return a friendly minion to your hand and give it +2/+2.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 0,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49804,
+    "flavor": "It is Wednesday, my dudes.",
+    "health": 3,
+    "id": "TRL_060",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Frog",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nWhenever you cast a spell,\ndraw a spell from your deck\nthat costs (1) more.",
+    "type": "MINION"
+  },
+  {
+    "armor": 5,
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 10,
+    "dbfId": 49819,
+    "elite": true,
+    "flavor": "If you can dodge an axe, you can dodge a ball.",
+    "health": 30,
+    "id": "TRL_065",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Zul'jin",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> Cast all spells\nyou've played this game\n<i>(targets chosen randomly)</i>.",
+    "type": "HERO"
+  },
+  {
+    "artist": "Patrik Bjorkstrom",
+    "attack": 1,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49838,
+    "flavor": "They saw their fate a closin'\nAboard a pirate ship\nOn deck: The Howlin' Hozen\nAbout to let one rip.",
+    "health": 1,
+    "id": "TRL_071",
+    "mechanics": [
+      "BATTLECRY",
+      "RUSH"
+    ],
+    "name": "Bloodsail Howler",
+    "race": "PIRATE",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Rush</b>\n<b>Battlecry:</b> Gain +1/+1\nfor each other Pirate\nyou control.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Grace Liu",
+    "attack": 1,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49843,
+    "durability": 3,
+    "flavor": "The tooth hurts, don’t it?",
+    "id": "TRL_074",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Serrated Tooth",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Give your minions <b>Rush</b>.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 5,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49847,
+    "flavor": "Throw your hands in the air!\nThey cost (1).",
+    "health": 7,
+    "id": "TRL_077",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Gurubashi Hypemon",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> <b>Discover</b> a 1/1 copy of a <b>Battlecry</b> minion. It costs (1).",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49853,
+    "flavor": "Murlocs practice Small Nice Voodoo.",
+    "id": "TRL_082",
+    "name": "Big Bad Voodoo",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DEATHRATTLE"
+    ],
+    "set": "TROLL",
+    "text": "Give a friendly minion \"<b>Deathrattle:</b> Summon a random minion that costs (1) more.\"",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Evgeniy Zagumyenny",
+    "attack": 1,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49867,
+    "elite": true,
+    "flavor": "Serenity. Peace. Many frogs.",
+    "health": 3,
+    "id": "TRL_085",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Zentimo",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]Whenever you target a\nminion with a spell, it also\ntargets adjacent ones.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 0,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49972,
+    "flavor": "It has Stealth, but its ominous theme music keeps giving it away.",
+    "health": 3,
+    "id": "TRL_092",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "Spirit of the Shark",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nYour minions' <b>Battlecries</b>\n  and <b>Combos</b> trigger twice. ",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 4,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50009,
+    "elite": true,
+    "flavor": "With Griftah in your deck, sometimes you start the game with The Coin!",
+    "health": 5,
+    "id": "TRL_096",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Griftah",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> <b>Discover</b> two\ncards. Give one to your\nopponent at random.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Skan Srisuwan",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50278,
+    "flavor": "“The spirits spoke to me.”\n\"What did they say?\"\n\"You had lethal two turns ago.\"",
+    "id": "TRL_097",
+    "name": "Seance",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Choose a minion. Add a copy of it to your hand.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50608,
+    "durability": 2,
+    "flavor": "Zul'jin's primary recruiting tool.",
+    "id": "TRL_111",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Headhunter's Hatchet",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> If you\ncontrol a Beast, gain\n+1 Durability.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50644,
+    "flavor": "Undoes years of obedience school training.",
+    "id": "TRL_119",
+    "name": "The Beast Within",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0,
+      "REQ_TARGET_WITH_RACE": 20
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "Give a friendly Beast +1/+1, then it attacks a random enemy minion.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jim Nelson",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50773,
+    "flavor": "And a bowl of chips. And some of those little cocktail weenies!",
+    "id": "TRL_124",
+    "mechanics": [
+      "COMBO"
+    ],
+    "name": "Raiding Party",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Draw 2 Pirates from your deck.\n<b>Combo:</b> And a weapon.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 6,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50774,
+    "elite": true,
+    "flavor": "\"You three! Get in the cannon!\"",
+    "health": 3,
+    "id": "TRL_126",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Captain Hooktusk",
+    "race": "PIRATE",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Summon 3 Pirates from your deck. Give them <b>Rush</b>.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50779,
+    "flavor": "Why fire your cannons strategically when you can fire them all at once?",
+    "id": "TRL_127",
+    "name": "Cannon Barrage",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]Deal $3 damage to a\nrandom enemy. Repeat\nfor each of your Pirates.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 50794,
+    "flavor": "Finally a cure for degenerates.",
+    "id": "TRL_128",
+    "name": "Regenerate",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Restore #3 Health.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 3,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50315,
+    "flavor": "Loves long walks on the beach, raising the dead, and chocolates.",
+    "health": 3,
+    "id": "TRL_131",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Sand Drudge",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "Whenever you cast a spell, summon a 1/1 Zombie with <b>Taunt</b>.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Peter Stapleton",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50731,
+    "flavor": "The last time he saw action, Undertaker ruled the meta.",
+    "health": 1,
+    "id": "TRL_151",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Former Champ",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Summon a 5/5 Hotshot.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50749,
+    "flavor": "Because Thrall wouldn't <i>lend</i> me Doomhammer.",
+    "id": "TRL_156",
+    "name": "Stolen Steel",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "<b>Discover</b> a weapon <i>(from another class)</i>.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50766,
+    "flavor": "Pirates will fall for anything.",
+    "id": "TRL_157",
+    "name": "Walk the Plank",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0,
+      "REQ_UNDAMAGED_TARGET": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Destroy an undamaged minion.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Christopher Hayes",
+    "attack": 0,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49944,
+    "flavor": "“Loti! LOTI! Drop it. Drop it Loti! Down! Down Loti!”",
+    "health": 3,
+    "id": "TRL_223",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Raptor",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nAfter your hero attacks and\n  kills a minion, draw a card.  ",
+    "type": "MINION"
+  },
+  {
+    "artist": "Luca Zontini",
+    "attack": 7,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49973,
+    "flavor": "\"Boy! Bring me my masks and skull rams.\"",
+    "health": 7,
+    "id": "TRL_232",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Ironhide Direhorn",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Overkill:</b> Summon a 5/5 Ironhide Runt.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jesper Ejsing",
+    "attack": 2,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49984,
+    "flavor": "Ruthless at tribal roasts.",
+    "health": 3,
+    "id": "TRL_240",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Savage Striker",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_HERO_HAS_ATTACK": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "Deal damage equal to your Attack.",
+    "text": "<b>Battlecry:</b> Deal damage to an enemy minion equal to your hero's Attack.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Christopher Hayes",
+    "attack": 4,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49985,
+    "elite": true,
+    "flavor": "There’s a word for Zandalari druids who refuse to pledge loyalty to Gonk: “Delicious.”",
+    "health": 9,
+    "id": "TRL_241",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Gonk, the Raptor",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "After your hero attacks and kills a minion, it may attack again.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Rudy Siswanto",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 49990,
+    "flavor": "Comes with an overwhelming urge to jump into the nearest open box.",
+    "id": "TRL_243",
+    "name": "Pounce",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Give your hero +2 Attack this turn.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Clint Langley",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49994,
+    "flavor": "Somebody’s been eating their funnel cakes.",
+    "id": "TRL_244",
+    "name": "Predatory Instincts",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]Draw a Beast from your\ndeck. Double its Health.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mauricio Herrera",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50002,
+    "flavor": "The first warning sign of an oncoming warlock temper tantrum.",
+    "id": "TRL_245",
+    "name": "Shriek",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Discard your lowest Cost card. Deal $2 damage to all minions.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50004,
+    "flavor": "“YOU SIGNED WHAT?!”",
+    "id": "TRL_246",
+    "name": "Void Contract",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "Destroy half of each player's deck.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Garner",
+    "attack": 6,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50006,
+    "flavor": "Reduce, reuse, resoul.",
+    "health": 6,
+    "id": "TRL_247",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Soulwarden",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Add 3 random cards you discarded this game to your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Skan Srisuwan",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50012,
+    "flavor": "There’s no “Aiiiieeee” in “Team.”",
+    "id": "TRL_249",
+    "name": "Grim Rally",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Destroy a friendly minion. Give your minions +1/+1.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 0,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50025,
+    "flavor": "Nah nah nah nah, nah nah nah nah, nah nah nah nah, nah nah nah nah",
+    "health": 3,
+    "id": "TRL_251",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Bat",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Stealth</b> for 1 turn.\nAfter a friendly minion dies, give a minion in your hand +1/+1.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50032,
+    "elite": true,
+    "flavor": "If you love Jeklik, set her free. YOU CAN'T GET RID OF HER.",
+    "health": 4,
+    "id": "TRL_252",
+    "mechanics": [
+      "LIFESTEAL",
+      "TAUNT",
+      "InvisibleDeathrattle"
+    ],
+    "name": "High Priestess Jeklik",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Taunt</b>, <b>Lifesteal</b>\nWhen you discard this,\nadd 2 copies of it to\nyour hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 1,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50034,
+    "elite": true,
+    "flavor": "REPEL’S EFFECT WORE OFF.",
+    "health": 1,
+    "id": "TRL_253",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Hir'eek, the Bat",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Fill your board with copies of this minion.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Mauricio Herrera",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50042,
+    "flavor": "Ah, yes. Mark. The mightiest Loa.",
+    "id": "TRL_254",
+    "mechanics": [
+      "CHOOSE_ONE"
+    ],
+    "name": "Mark of the Loa",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Choose One</b> -\nGive a minion +2/+4\nand <b>Taunt</b>; or Summon\ntwo 3/2 Raptors.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Andrew Hou",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50044,
+    "flavor": "[x]The Gurubashi Arena has an\nextremely permissive policy on\npets in the workplace.",
+    "id": "TRL_255",
+    "name": "Stampeding Roar",
+    "playRequirements": {
+      "REQ_FRIENDLY_MINION_OF_RACE_IN_HAND": 20,
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "Summon a random Beast from your hand and give it <b>Rush</b>.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Luke Mancini",
+    "attack": 5,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50070,
+    "flavor": "Main supplier of Blood Troll Syrup to the Intercontinental Hut of Funnel Cakes.",
+    "health": 8,
+    "id": "TRL_257",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Blood Troll Sapper",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "After a friendly minion dies, deal 2 damage to the enemy hero.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Vladimir Kafanov",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50071,
+    "flavor": "Black Friday gets worse every year.",
+    "id": "TRL_258",
+    "name": "Mass Hysteria",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Force each minion to attack another random minion.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Ormandelli",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50082,
+    "elite": true,
+    "flavor": "Everyone wants to be a princess, but nobody ever considers the size of the hat.",
+    "health": 5,
+    "id": "TRL_259",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Princess Talanji",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Summon all minions from your hand that didn't start in your deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50087,
+    "elite": true,
+    "flavor": "Everyone's dying to meet him.",
+    "health": 7,
+    "id": "TRL_260",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Bwonsamdi, the Dead",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> Draw 1-Cost\nminions from your deck\nuntil your hand is full.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Gimaldinov",
+    "attack": 7,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 25,
+    "dbfId": 49981,
+    "elite": true,
+    "flavor": "On bended knee Thekal placed his weapon upon Shirvallah’s altar, whereupon she slowly knocked it off with her paw.",
+    "health": 5,
+    "id": "TRL_300",
+    "mechanics": [
+      "DIVINE_SHIELD",
+      "LIFESTEAL",
+      "RUSH"
+    ],
+    "name": "Shirvallah, the Tiger",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Divine Shield</b>, <b>Rush</b>, <b>Lifesteal</b>\n Costs (1) less for each Mana\nyou've spent on spells.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49999,
+    "flavor": "Highly effective against 3 year olds.",
+    "id": "TRL_302",
+    "name": "Time Out!",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "COMMON",
+    "referencedTags": [
+      "IMMUNE"
+    ],
+    "set": "TROLL",
+    "text": "Your hero is <b>Immune</b> until your next turn.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "M. Alvares & M. Azevedo",
+    "attack": 3,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50014,
+    "durability": 3,
+    "flavor": "Only two things in life are certain: death and axes.",
+    "id": "TRL_304",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Farraki Battleaxe",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Overkill:</b> Give a minion in your hand +2/+2.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "James Ryman",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50019,
+    "flavor": "… Arrives? Approaches? TELL US ALREADY!",
+    "id": "TRL_305",
+    "name": "A New Challenger...",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER",
+      "DIVINE_SHIELD",
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "<b>Discover</b> a 6-Cost minion. Summon it with <b>Taunt</b> and <b>Divine Shield</b>.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Maria Trepalina",
+    "attack": 1,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50022,
+    "flavor": "She protec.\nShe attac.\nBut most importantly,\nshe come bac.",
+    "health": 3,
+    "id": "TRL_306",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Immortal Prelate",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Shuffle this into your deck. It keeps any enchantments.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50028,
+    "flavor": "Hey! No cameras allowed!",
+    "id": "TRL_307",
+    "name": "Flash of Light",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Restore #4 Health.\nDraw a card.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50126,
+    "elite": true,
+    "flavor": "\"…and then I beat him with 1 Health!\"",
+    "health": 4,
+    "id": "TRL_308",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "High Priest Thekal",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Convert all but 1 of your Hero's Health into Armor.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Gimaldinov",
+    "attack": 0,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50031,
+    "flavor": "Less of a cantrip and more of a cat-nip.",
+    "health": 3,
+    "id": "TRL_309",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Tiger",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nAfter you cast a spell,\nsummon a Tiger with stats\nequal to its Cost.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 50120,
+    "flavor": "It's just lighter fluid.",
+    "id": "TRL_310",
+    "name": "Elemental Evocation",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "The next Elemental you play this turn costs (2) less.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Ware Lee",
+    "attack": 3,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50121,
+    "flavor": "Arcane energy… finds a way.",
+    "health": 3,
+    "id": "TRL_311",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Arcanosaur",
+    "race": "ELEMENTAL",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> If you played an Elemental last turn, deal 3 damage to all other minions.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50083,
+    "flavor": "But don’t ask her to use it in a sentence.",
+    "health": 3,
+    "id": "TRL_312",
+    "name": "Spellzerker",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "SPELLPOWER"
+    ],
+    "set": "TROLL",
+    "text": "Has <b>Spell Damage +2</b> while damaged.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50122,
+    "flavor": "The hoof.\nThe hoof.\nThe hoof is on fire.",
+    "id": "TRL_313",
+    "name": "Scorch",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]Deal $4 damage to a\nminion. Costs (1) if you\nplayed an Elemental\nlast turn.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50084,
+    "flavor": "She prefers “Flammably Inclined.”",
+    "health": 4,
+    "id": "TRL_315",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Pyromaniac",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Whenever your Hero Power kills a minion, draw a card.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 4,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "collectionText": "[x]<b>Battlecry:</b> If your Hero Power\ndealt 8 damage this game,\nsummon Ragnaros the\nFirelord.",
+    "cost": 7,
+    "dbfId": 50088,
+    "elite": true,
+    "flavor": "You mess with the Bird, you get the Firelord.",
+    "health": 4,
+    "id": "TRL_316",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Jan'alai, the Dragonhawk",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> If your Hero Power\ndealt 8 damage this game,\nsummon Ragnaros the\nFirelord.@ <i>({0} left!)</i>@ <i>(Ready!)</i>",
+    "type": "MINION"
+  },
+  {
+    "artist": "J. Axer",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50086,
+    "flavor": "If you’re burning and you know it, wave your hands!",
+    "id": "TRL_317",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Blast Wave",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "Deal $2 damage to all minions.\n<b>Overkill</b>: Add a random Mage spell to your hand.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mike Sass",
+    "attack": 5,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50095,
+    "elite": true,
+    "flavor": "Extremely awkward cousin of Hex Lord Malaclass.",
+    "health": 5,
+    "id": "TRL_318",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Hex Lord Malacrass",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry</b>: Add a copy of your opening hand to your hand <i>(except this card)</i>.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 0,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50093,
+    "flavor": "Dragonhawks aren’t known for their accuracy.",
+    "health": 3,
+    "id": "TRL_319",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "Spirit of the Dragonhawk",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nYour Hero Power also targets\n adjacent minions.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50040,
+    "flavor": "No thanks, I already devast-ate.",
+    "id": "TRL_321",
+    "name": "Devastate",
+    "playRequirements": {
+      "REQ_DAMAGED_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Deal $4 damage to a damaged minion.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "attack": 5,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50049,
+    "flavor": "The third little dragon made his armor out of adamantite.",
+    "health": 5,
+    "id": "TRL_323",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Emberscale Drake",
+    "race": "DRAGON",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> If you're holding a Dragon, gain 5 Armor.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50054,
+    "flavor": "This metal is so heavy it will satisfy your iron requirements for the next year.",
+    "id": "TRL_324",
+    "name": "Heavy Metal!",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]Summon a random\nminion with Cost equal\nto your Armor <i>(up to 10).</i>",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jason Kang",
+    "attack": 4,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50056,
+    "durability": 4,
+    "flavor": "“Griftah here with de Sul’chop. One chop, you get four damage. Two chops, eight damage - you gonna change de way you fight.\"",
+    "id": "TRL_325",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Sul'thraze",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Overkill</b>: You may attack again.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 3,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50059,
+    "flavor": "Here comes “The Smolder.”",
+    "health": 2,
+    "id": "TRL_326",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Smolderthorn Lancer",
+    "playRequirements": {
+      "REQ_DAMAGED_TARGET": 0,
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_DRAGON_IN_HAND": 0
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "targetingArrowText": "Destroy a damaged minion.",
+    "text": "<b>Battlecry:</b> If you're holding a Dragon, destroy a damaged enemy minion.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 0,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 52242,
+    "flavor": "Where did they get this preposterous hypothesis?",
+    "health": 3,
+    "id": "TRL_327",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "Spirit of the Rhino",
+    "rarity": "RARE",
+    "referencedTags": [
+      "IMMUNE",
+      "RUSH"
+    ],
+    "set": "TROLL",
+    "text": "<b>Stealth</b> for 1 turn.\nYour <b>Rush</b> minions are <b>Immune</b> the turn they're summoned.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 4,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50066,
+    "elite": true,
+    "flavor": "War Master sounds cooler than Dragon Sitter.",
+    "health": 3,
+    "id": "TRL_328",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "War Master Voone",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Copy all\nDragons in your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 5,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50074,
+    "elite": true,
+    "flavor": "Most trolls only get to “AAAAHHH!” and don’t make it to the “kali” part.",
+    "health": 5,
+    "id": "TRL_329",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "Akali, the Rhino",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Rush</b>\n<b>Overkill:</b> Draw a <b>Rush</b> minion from your deck. Give it +5/+5.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Rudy Siswanto",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50212,
+    "flavor": "\"Hello? Yes, this is Huffer.\"",
+    "id": "TRL_339",
+    "name": "Master's Call",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "<b>Discover</b> a minion in your deck.\nIf all 3 are Beasts,\ndraw them all.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 4,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50356,
+    "flavor": "Honestly, his delivery is a little wooden.",
+    "health": 4,
+    "id": "TRL_341",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Treespeaker",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Transform your Treants into 5/5 Ancients.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "attack": 1,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 43310,
+    "elite": true,
+    "flavor": "“Ravasaur!”\n“Pretty scary”\n“…Blammodax!”\n“Is that a thing?”\n“SMAXODON!”\n“….now you’re just making those up.”",
+    "health": 2,
+    "id": "TRL_343",
+    "mechanics": [
+      "CHOOSE_ONE"
+    ],
+    "name": "Wardruid Loti",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Choose One - </b>Transform into one of Loti's four dinosaur forms.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 4,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50369,
+    "elite": true,
+    "flavor": "Krag'wa has a ritual to honor his friends and a ritual to devour his enemies. No one can tell them apart.",
+    "health": 6,
+    "id": "TRL_345",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Krag'wa, the Frog",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Return all spells you played last turn to your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Anton Zemskov",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50466,
+    "flavor": "The card is common, but the steak is rare.",
+    "id": "TRL_347",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Baited Arrow",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Deal $3 damage. <b>Overkill:</b> Summon a 5/5 Devilsaur.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Vladimir Kafanov",
+    "attack": 1,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49824,
+    "flavor": "The terrible thing about lynxes is lynxes are terrible things. Their teeth are made out of biting, their paws are made out of springs!",
+    "health": 1,
+    "id": "TRL_348",
+    "mechanics": [
+      "BATTLECRY",
+      "RUSH"
+    ],
+    "name": "Springpaw",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>Rush</b>\n<b>Battlecry:</b> Add a 1/1 Lynx\nwith <b>Rush</b> to your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Gonzalo Ordonez",
+    "attack": 2,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50471,
+    "flavor": "“Shoot them in the face” is more of a <i>tactic</i> than a <i>strategy</i>.",
+    "health": 4,
+    "id": "TRL_349",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Bloodscalp Strategist",
+    "rarity": "RARE",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> If you have a weapon equipped, <b>Discover</b> a spell.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50547,
+    "flavor": "\"Oh, THAT'S how she brings the warts!\"",
+    "id": "TRL_351",
+    "mechanics": [
+      "OVERLOAD"
+    ],
+    "name": "Rain of Toads",
+    "overload": 3,
+    "playRequirements": {
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "Summon three 2/4 Toads with <b>Taunt</b>. <b>Overload:</b> (3)",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 1,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50550,
+    "durability": 3,
+    "flavor": "\"I double frog dare you!\"",
+    "id": "TRL_352",
+    "mechanics": [
+      "AURA"
+    ],
+    "name": "Likkim",
+    "rarity": "RARE",
+    "referencedTags": [
+      "OVERLOAD"
+    ],
+    "set": "TROLL",
+    "text": "Has +2 Attack while you have <b>Overloaded</b> Mana Crystals.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50595,
+    "durability": 4,
+    "flavor": "\"This merit badge is for cruelty. This one's for whipping. And this one is for embroidery...\"",
+    "id": "TRL_360",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Overlord's Whip",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "After you play a minion, deal 1 damage to it.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50602,
+    "flavor": "Not to be confused with Dragon Yodel.",
+    "id": "TRL_362",
+    "name": "Dragon Roar",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Add 2 random Dragons to your hand.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50796,
+    "flavor": "Don't even think of asking for time off.",
+    "health": 3,
+    "id": "TRL_363",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Saronite Taskmaster",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Summon a 0/3 Free Agent with <b>Taunt</b> for your opponent.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jesper Ejsing",
+    "attack": 1,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50381,
+    "flavor": "A few hours later he DESTROYED the arena bathrooms.",
+    "health": 1,
+    "id": "TRL_390",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Daring Fire-Eater",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Your next Hero Power this turn deals 2 more damage.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50230,
+    "flavor": "Sometimes you get punched so hard <i>they</i> see double.",
+    "id": "TRL_400",
+    "mechanics": [
+      "SECRET"
+    ],
+    "name": "Splitting Image",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Secret:</b> When one of your minions is attacked, summon a copy of it.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "E. Kenji & M. Azevedo",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50491,
+    "flavor": "All it takes is a tummy rub.",
+    "health": 4,
+    "id": "TRL_405",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Untamed Beastmaster",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "Whenever you draw a Beast, give it +2/+2.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50493,
+    "flavor": "It's the sleeper of the set.",
+    "health": 4,
+    "id": "TRL_406",
+    "mechanics": [
+      "ENRAGED"
+    ],
+    "name": "Dozing Marksman",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Has +4 Attack while damaged.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ekaterina Shapovalova",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50497,
+    "flavor": "100% organic troll sweat.",
+    "health": 1,
+    "id": "TRL_407",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Waterboy",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Your next Hero Power this turn costs (0).",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 12,
+    "dbfId": 50539,
+    "flavor": "Trolls can regenerate lost limbs, but this is what they do with the leftovers.",
+    "health": 8,
+    "id": "TRL_408",
+    "mechanics": [
+      "TAUNT"
+    ],
+    "name": "Grave Horror",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Taunt</b>\nCosts (1) less for each spell\nyou've cast this game.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Anton Zemskov",
+    "attack": 2,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50775,
+    "elite": true,
+    "flavor": "“… We’re gonna need a bigger board.”",
+    "health": 2,
+    "id": "TRL_409",
+    "mechanics": [
+      "BATTLECRY",
+      "DEATHRATTLE"
+    ],
+    "name": "Gral, the Shark",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> Eat a minion in\nyour deck and gain its stats.\n<b>Deathrattle:</b> Add it to\nyour hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Maria Trepalina",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50282,
+    "flavor": "Never give up, always surrender!",
+    "id": "TRL_500",
+    "name": "Surrender to Madness",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]Destroy 3 of your Mana\nCrystals. Give all minions\nin your deck +2/+2.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Lemon Sky",
+    "attack": 3,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50283,
+    "flavor": "“Okay kids did everyone remember to heal before we left?”",
+    "health": 2,
+    "id": "TRL_501",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Auchenai Phantasm",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> This turn, your healing effects deal damage instead.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 0,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50352,
+    "flavor": "Just because you’re dead doesn’t mean you’re off the team.",
+    "health": 3,
+    "id": "TRL_502",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Dead",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nAfter a friendly minion dies,\nshuffle a 1-Cost copy of it\ninto your deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50372,
+    "flavor": "They say you can’t make an omelet without AHHH THEY’RE EATING MY FACE!",
+    "health": 2,
+    "id": "TRL_503",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Scarab Egg",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Summon three 1/1 Scarabs.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50374,
+    "flavor": "Also makes a great librarian. She's really good at fixing books!",
+    "health": 3,
+    "id": "TRL_504",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Booty Bay Bookie",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Give your opponent a Coin.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50377,
+    "flavor": "It can’t be all that helpful. Not wif dose widdle wings!",
+    "health": 1,
+    "id": "TRL_505",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Helpless Hatchling",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Reduce the Cost of a Beast in your hand by (1).",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50380,
+    "flavor": "“Ya hold it by da feet, mon. Den ya THROW.”",
+    "health": 1,
+    "id": "TRL_506",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Gurubashi Chicken",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Overkill:</b> Gain +5 Attack.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Peter Stapleton",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50383,
+    "flavor": "His taste in soup is criminal.",
+    "health": 2,
+    "id": "TRL_507",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Sharkfin Fan",
+    "race": "PIRATE",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "After your hero attacks, summon a 1/1 Pirate.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50385,
+    "flavor": "Regenerates any injury except heartbreak.",
+    "health": 5,
+    "id": "TRL_508",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Regeneratin' Thug",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "At the start of your turn, restore #2 Health to this minion.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50386,
+    "flavor": "You could say he has a certain appeal.",
+    "health": 2,
+    "id": "TRL_509",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Banana Buffoon",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Add 2 Bananas to your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ekaterina Shapovalova",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50391,
+    "flavor": "Famed hunter of the deadly Achilliosaur.",
+    "health": 1,
+    "id": "TRL_512",
+    "mechanics": [
+      "BATTLECRY",
+      "LIFESTEAL"
+    ],
+    "name": "Cheaty Anklebiter",
+    "playRequirements": {
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "Deal 1 damage.",
+    "text": "<b>Lifesteal</b>\n<b>Battlecry:</b> Deal 1 damage.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dan Scott",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50392,
+    "flavor": "Can’t break the rules if you can’t read ‘em.",
+    "health": 14,
+    "id": "TRL_513",
+    "mechanics": [
+      "DIVINE_SHIELD",
+      "TAUNT"
+    ],
+    "name": "Mosh'ogg Enforcer",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Taunt</b>\n<b>Divine Shield</b>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Brian Despain",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50393,
+    "flavor": "Maybe don't put this one in your garden.",
+    "health": 4,
+    "id": "TRL_514",
+    "mechanics": [
+      "BATTLECRY",
+      "TAUNT"
+    ],
+    "name": "Belligerent Gnome",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Taunt</b>\n<b>Battlecry:</b> If your opponent\nhas 2 or more minions,\ngain +1 Attack.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Paul Mafayon",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50395,
+    "flavor": "\"Shirt? Shoes!? No service!\"",
+    "health": 7,
+    "id": "TRL_515",
+    "mechanics": [
+      "TAUNT"
+    ],
+    "name": "Rabble Bouncer",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Taunt</b>\nCosts (1) less for each enemy minion.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Izzy Hoover",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50396,
+    "flavor": "For a limited time, loa blessings are on a pray-one-get-two deal (on selected sacrifices only).",
+    "health": 2,
+    "id": "TRL_516",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Gurubashi Offering",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "At the start of your turn, destroy this and gain 8 Armor.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50397,
+    "flavor": "Her fantasy Rumble league gives double points for dismemberment.",
+    "health": 3,
+    "id": "TRL_517",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Arena Fanatic",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Give all minions in your hand +1/+1.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50402,
+    "flavor": "He was destined for the soup. One way or another…",
+    "health": 2,
+    "id": "TRL_520",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Murloc Tastyfin",
+    "race": "MURLOC",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Deathrattle:</b> Draw 2 Murlocs\nfrom your deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Eric Braddock",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50403,
+    "flavor": "Everybody with a ticket get in here!",
+    "health": 3,
+    "id": "TRL_521",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Arena Patron",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>Overkill:</b> Summon another Arena Patron.",
+    "type": "MINION"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 2,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50405,
+    "flavor": "“Does she cause them with magic, or just…like have a bucket she brings with her?”",
+    "health": 1,
+    "id": "TRL_522",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Wartbringer",
+    "playRequirements": {
+      "REQ_TARGET_IF_AVAILABLE_AND_MINIMUM_SPELLS_PLAYED_THIS_TURN": 2
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "Deal 2 damage.",
+    "text": "<b>Battlecry:</b> If you played 2 spells this turn, deal 2 damage.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Eva Widermann",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50408,
+    "flavor": "If your tree is on fire - stop, drop, and troll.",
+    "health": 2,
+    "id": "TRL_523",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Firetree Witchdoctor",
+    "rarity": "RARE",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> If you're holding\na Dragon, <b>Discover</b> a spell.",
+    "type": "MINION"
+  },
+  {
+    "artist": "David Devries",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50410,
+    "flavor": "Can also break up fights, relationships, and unions.",
+    "health": 1,
+    "id": "TRL_524",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Shieldbreaker",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_MUST_TARGET_TAUNTER": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "RARE",
+    "referencedTags": [
+      "SILENCE",
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "targetingArrowText": "<b>Silence</b> a minion with <b>Taunt</b>.",
+    "text": "<b>Battlecry:</b> <b>Silence</b> an enemy minion with <b>Taunt</b>.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50411,
+    "flavor": "Yeah it's great, but did you see the Arena Treasure Arms?!",
+    "health": 4,
+    "id": "TRL_525",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Arena Treasure Chest",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Draw 2 cards.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Maurico Herrera",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50412,
+    "flavor": "Caution: Contains Flammable Material",
+    "health": 6,
+    "id": "TRL_526",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Dragonmaw Scorcher",
+    "race": "DRAGON",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Deal 1 damage to all other minions.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50414,
+    "flavor": "“It’s an <i>illusion</i>, Malacrass!”",
+    "health": 4,
+    "id": "TRL_527",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Drakkari Trickster",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> Give each player a\ncopy of a random card from\ntheir opponent's deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Paul Mafayon",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50416,
+    "flavor": "\"Tell me if you’ve heard this one!\"",
+    "health": 10,
+    "id": "TRL_528",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "Linecracker",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>Overkill:</b> Double this minion's Attack.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Alex Horley Ormandelli",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50421,
+    "flavor": "Knew Mysterious Challenger back when he was a Mysterious Squire.",
+    "health": 4,
+    "id": "TRL_530",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Masked Contender",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "SECRET"
+    ],
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> If you control a <b>Secret</b>, play a <b>Secret</b> from your deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sam Nielsen",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50427,
+    "flavor": "Rub a dub dub, three trolls in a tub.\nAnd who do you think dey be?\nDa Shaker, Da Breaker, and Da Undatakah.\nAnd all of dem comin' for me.",
+    "health": 2,
+    "id": "TRL_531",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Rumbletusk Shaker",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Summon a 3/2 Rumbletusk Breaker.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Steve Prescott",
+    "attack": 6,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50430,
+    "flavor": "One's play-by-play. The other is off-color.",
+    "health": 5,
+    "id": "TRL_532",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Mosh'Ogg Announcer",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]Enemies attacking this\nhave a 50% chance to\nattack someone else.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50434,
+    "flavor": "I scream, you scream, we all scream when we see a Freeze Mage.",
+    "health": 5,
+    "id": "TRL_533",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Ice Cream Peddler",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "FREEZE"
+    ],
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> If you control a <b>Frozen</b> minion, gain 8 Armor.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50437,
+    "flavor": "Nonono, the <i>turtle</i> is the Shellfighter.",
+    "health": 8,
+    "id": "TRL_535",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Snapjaw Shellfighter",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]Whenever an adjacent\nminion takes damage, this\n minion takes it instead.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Clint Langley",
+    "attack": 8,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50443,
+    "elite": true,
+    "flavor": "First Deathrattle: Draw a card.\nSecond: Draw 2 cards.\nThird: Throw Mon'kind off a steel cage and plummet sixteen feet through an announcer’s table.",
+    "health": 5,
+    "id": "TRL_537",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Da Undatakah",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "DEATHRATTLE"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> Gain the\n<b>Deathrattle</b> effects of\n3 friendly minions that\ndied this game.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Izzy Hoover",
+    "attack": 9,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 10,
+    "dbfId": 50454,
+    "elite": true,
+    "flavor": "ATTENTION: Do not enter any major city while infected with the Corrupted Blood!",
+    "health": 6,
+    "id": "TRL_541",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "Hakkar, the Soulflayer",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Deathrattle:</b> Shuffle a Corrupted Blood into each player's deck.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 7,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 9,
+    "dbfId": 50459,
+    "elite": true,
+    "flavor": "Adorning devilsaurs with armor and feathers is a respected job in troll culture, although it has a high turnover rate.",
+    "health": 7,
+    "id": "TRL_542",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "Oondasta",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Rush</b>\n<b>Overkill:</b> Summon a Beast from your hand.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50512,
+    "durability": 2,
+    "flavor": "This weapon – ow! Requires a little – OWW! Finesse.",
+    "id": "TRL_543",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Bloodclaw",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Deal 5 damage to your hero.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 4,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "collectionText": "[x]<b>Battlecry:</b> If you've restored\n10 Health this game, gain\n+4/+4 and <b>Taunt</b>.",
+    "cost": 4,
+    "dbfId": 50514,
+    "flavor": "YOU WERE A TEMPLAR, JONDAR!",
+    "health": 4,
+    "id": "TRL_545",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Zandalari Templar",
+    "rarity": "RARE",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>Battlecry:</b> If you've restored\n10 Health this game, gain\n+4/+4 and <b>Taunt</b>.@ <i>({0} left!)</i>@ <i>(Ready!)</i>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50532,
+    "flavor": "\"Dude, where's my pizza?!\"",
+    "health": 5,
+    "id": "TRL_546",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Ornery Tortoise",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Deal 5 damage to your hero.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Vlad Botos",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50776,
+    "flavor": "\"I used to farm for hours! Now they just come in packs?\"",
+    "health": 7,
+    "id": "TRL_550",
+    "mechanics": [
+      "RUSH",
+      "TAUNT"
+    ],
+    "name": "Amani War Bear",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Rush</b>\n<b>Taunt</b>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 2,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50863,
+    "flavor": "\"Reck less!? ME WRECK MOAR!\"",
+    "health": 6,
+    "id": "TRL_551",
+    "mechanics": [
+      "BATTLECRY",
+      "TAUNT"
+    ],
+    "name": "Reckless Diretroll",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>Taunt</b>\n<b>Battlecry:</b> Discard your lowest Cost card.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50991,
+    "flavor": "Or as it’s known in troll, “De bolt, mon.”",
+    "id": "TRL_555",
+    "name": "Demonbolt",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "Destroy a minion. Costs (1) less for each minion you control.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 51136,
+    "elite": true,
+    "flavor": "Sadly, she was still two credits short of her Witch Doctorate.",
+    "health": 5,
+    "id": "TRL_564",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Mojomaster Zihi",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Set each player to 5 Mana Crystals.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dave Allsop",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 51159,
+    "flavor": "My roommates only use Revenge of the Passive Aggressive.",
+    "id": "TRL_566",
+    "name": "Revenge of the Wild",
+    "playRequirements": {
+      "REQ_FRIENDLY_MINION_OF_RACE_DIED_THIS_TURN": 20,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Summon your Beasts that died this turn.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mike Sass",
+    "attack": 7,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 51816,
+    "flavor": "Every major show has an opening act to warm up the crowd.",
+    "health": 4,
+    "id": "TRL_569",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Crowd Roaster",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_DRAGON_IN_HAND": 0
+    },
+    "race": "DRAGON",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "targetingArrowText": "Deal 7 damage to an enemy minion.",
+    "text": "[x]<b>Battlecry:</b> If you're holding\na Dragon, deal 7 damage\nto an enemy minion.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 52931,
+    "flavor": "Fresh from the floor of the arena!",
+    "health": 4,
+    "id": "TRL_570",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Soup Vendor",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "Whenever you restore 3 or more Health to your hero, draw a card.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 3,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50659,
+    "elite": true,
+    "flavor": "Remember, you’re only as strong as your weakest lynx.",
+    "health": 2,
+    "id": "TRL_900",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "Halazzi, the Lynx",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "RUSH"
+    ],
+    "set": "TROLL",
+    "text": "<b>Battlecry:</b> Fill your hand with 1/1 Lynxes that have <b>Rush</b>.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 0,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50660,
+    "flavor": "Much of this shrine’s power lies in the can-opener noise it makes.",
+    "health": 3,
+    "id": "TRL_901",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "Spirit of the Lynx",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>Stealth</b> for 1 turn.\nWhenever you summon a \nBeast, give it +1/+1.",
     "type": "MINION"
   },
   {

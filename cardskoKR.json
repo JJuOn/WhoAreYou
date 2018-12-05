@@ -1141,7 +1141,7 @@
       "TAUNT"
     ],
     "set": "TGT",
-    "text": "<b>비밀:</b> 내 영웅이 공격받은 후에 <b>도발</b> 능력이 있는 3/3 곰을 소환합니다.",
+    "text": "<b>비밀:</b> 내 영웅이 공격받은 후에, <b>도발</b> 능력이 있는 3/3 곰을 소환합니다.",
     "type": "SPELL"
   },
   {
@@ -2409,7 +2409,7 @@
     "name": "볼프 램실드",
     "rarity": "LEGENDARY",
     "set": "TGT",
-    "text": "이 하수인은 내 영웅이 받을 피해를 대신 받습니다.",
+    "text": "내 영웅이 피해를 받을 때마다 이 하수인이 그 피해를 대신 받습니다.",
     "type": "MINION"
   },
   {
@@ -6005,7 +6005,7 @@
     "collectible": true,
     "cost": 5,
     "dbfId": 40281,
-    "flavor": "\"공격력이 2배야.\" \"그래?\"\n\"생명력도 2배야.\" \"진짜?\"\n\"발동 효과도 2배야.\" \"정말로?!\"\n\"응, 그런데 비용은 5배야.\"",
+    "flavor": "\"공격력이 2배야.\" \"그래?\"\n\"생명력도 2배야.\" \"진짜?\"\n\"발동 효과도 2배야.\" \"정말로?!\"\n\"응, 그런데 비용은 2.5배야.\"",
     "health": 6,
     "id": "CFM_060",
     "mechanics": [
@@ -11988,7 +11988,7 @@
     "name": "정신 지배 기술자",
     "rarity": "RARE",
     "set": "EXPERT1",
-    "text": "<b>전투의 함성:</b> 전장에 상대편 하수인이 넷 이상 있으면, 무작위 적 하수인을 가져옵니다.",
+    "text": "<b>전투의 함성:</b> 상대편에게 하수인이 넷 이상 있으면, 무작위 적 하수인을 가져옵니다.",
     "type": "MINION"
   },
   {
@@ -29197,7 +29197,7 @@
     "name": "왕의 파멸",
     "rarity": "LEGENDARY",
     "set": "LOOTAPALOOZA",
-    "text": "<b>죽음의 메아리:</b> 이 무기를 내 덱에 섞어 넣습니다. 모든 강화 효과가 유지됩니다.",
+    "text": "모든 강화\n효과가 유지됩니다. <b>죽음의 메아리:</b>\n이 무기를 내 덱에\n섞어 넣습니다.",
     "type": "WEAPON"
   },
   {
@@ -32442,6 +32442,2696 @@
     "rarity": "LEGENDARY",
     "set": "HOF",
     "text": "<b>전투의 함성:</b> 두 플레이어 모두 파워 코드 카드를 손으로 가져오고 로큰롤에 흠뻑 취합니다!",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49049,
+    "flavor": "누군가의 쓰레기는 다른 누군가의 졸업템일 수도 있습니다.",
+    "health": 5,
+    "id": "TRL_010",
+    "mechanics": [
+      "OVERKILL",
+      "STEALTH"
+    ],
+    "name": "장비 수집가",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>은신</b>, <b>압살:</b> 방어도를\n+3 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49051,
+    "entourage": [
+      "CS2_052",
+      "CS2_050",
+      "NEW1_009",
+      "CS2_051"
+    ],
+    "flavor": "트롤들은 대기권을 돌파할 수 있는 토템을 처음으로 발명했습니다.",
+    "id": "TRL_012",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "토템 강타",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]피해를 $2 줍니다.\n<b>압살</b>: 무작위 기본\n토템을 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "David Kegg",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49066,
+    "flavor": "웃돈은 10% 정도만 준비해.",
+    "health": 3,
+    "id": "TRL_015",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "암표 흥정꾼",
+    "race": "PIRATE",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>압살:</b>\n카드를 2장 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jiajun Tian",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 49088,
+    "flavor": "네가 눈이 없어, 발이 없... 아.",
+    "health": 4,
+    "id": "TRL_020",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "눈먼 순찰대원",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>속공</b>, <b>압살:</b> 1/1 박쥐를 2마리 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49800,
+    "flavor": "가끔은 뱀들도 수호받고 싶어 합니다.",
+    "health": 2,
+    "id": "TRL_057",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "뱀의 수호물",
+    "race": "TOTEM",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "내 턴이 끝날 때,\n적 영웅에게 피해를\n2 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49802,
+    "flavor": "환영을 바라볼 때에는 마음가짐이 중요하죠.",
+    "id": "TRL_058",
+    "name": "음산한 환영",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "이번 턴에 내가 시전하는 다음 주문의 비용이 (3) 감소합니다. 주문을 <b>발견</b>합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49803,
+    "flavor": "깨끗이 닦인 바닥의 카운터입니다.",
+    "health": 3,
+    "id": "TRL_059",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "수렁 첨벙이",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "race": "ELEMENTAL",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "targetingArrowText": "내 손으로 하수인 가져오기",
+    "text": "[x]<b>전투의 함성:</b> 아군 하수인을\n내 손으로 다시 가져옵니다.\n그 하수인에게 +2/+2를\n부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 0,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49804,
+    "flavor": "6시는 슬픈 개구리고, 12시는 아무튼 생성됨입니다.",
+    "health": 3,
+    "id": "TRL_060",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "개구리의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "1턴 동안 <b>은신</b>을 얻습니다.\n내가 주문을 시전할 때마다 내 덱에서 그 주문보다 비용이 (1) 높은 주문을 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "armor": 5,
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 10,
+    "dbfId": 49819,
+    "elite": true,
+    "flavor": "도끼를 피할 수 있다면 공도 피할 수 있어.",
+    "health": 30,
+    "id": "TRL_065",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "줄진",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n이번 게임에서 내가 낸\n모든 주문을 시전합니다.\n<i>(대상은 무작위로 선택)</i>",
+    "type": "HERO"
+  },
+  {
+    "artist": "Patrik Bjorkstrom",
+    "attack": 1,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49838,
+    "flavor": "\"이제 내가 두목이다, 응가들아!\"",
+    "health": 1,
+    "id": "TRL_071",
+    "mechanics": [
+      "BATTLECRY",
+      "RUSH"
+    ],
+    "name": "붉은해적단 호젠",
+    "race": "PIRATE",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>속공</b>, <b>전투의 함성:</b>\n내 전장에 있는 다른 해적 하나당 +1/+1을 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Grace Liu",
+    "attack": 1,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49843,
+    "durability": 3,
+    "flavor": "톱니 같은 이빨, 괴상망측한 괴성!",
+    "id": "TRL_074",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "톱니 이빨",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b> 내\n하수인들에게 <b>속공</b>을 부여합니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 5,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49847,
+    "flavor": "손 머리 위로! 올린 사람은 비용이 (1)이 됩니다.",
+    "health": 7,
+    "id": "TRL_077",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "구루바시 함성꾼",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n<b>전투의 함성</b> 하수인을\n<b>발견</b>합니다. 그 하수인은\n비용이 (1)인 1/1\n하수인이 됩니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49853,
+    "flavor": "멀록들은 작은 행복의 부두술을 연습합니다.",
+    "id": "TRL_082",
+    "name": "대재앙의 부두술",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DEATHRATTLE"
+    ],
+    "set": "TROLL",
+    "text": "[x]아군 하수인에게\n\"<b>죽음의 메아리:</b> 비용이\n(1) 높은 무작위 하수인을\n소환함\" 능력을 부여합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Evgeniy Zagumyenny",
+    "attack": 1,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49867,
+    "elite": true,
+    "flavor": "평온. 평안. 그리고 수많은 개구리들.",
+    "health": 3,
+    "id": "TRL_085",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "젠티모",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]내가 주문의 대상으로\n하수인을 지정할 때마다\n양옆의 하수인들도\n대상으로 지정합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 0,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49972,
+    "flavor": "은신 중이긴 하지만 불길한 음악 소리 때문에 누구든 알아챕니다.",
+    "health": 3,
+    "id": "TRL_092",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "상어의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "1턴 동안 <b>은신</b>을 얻습니다.\n내 하수인들의 <b>전투의 함성</b>과 <b>연계</b> 능력이 2번 발동합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 4,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50009,
+    "elite": true,
+    "flavor": "그립타가 덱에 있으면 가끔은 동전을 가지고 게임을 시작한답니다!",
+    "health": 5,
+    "id": "TRL_096",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "그립타",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b>\n카드를 2장 <b>발견</b>합니다. 1장을 무작위로 상대편에게 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Skan Srisuwan",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50278,
+    "flavor": "\"혼령들이 내게 말을 했다네.\" \"뭐라고 말했는가?\" \"두 턴 전에 킬각이었는데 자네가 놓쳤다고.\"",
+    "id": "TRL_097",
+    "name": "교령",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]하수인을 선택합니다.\n그 카드를 복사하여\n내 손으로 가져옵니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50608,
+    "durability": 2,
+    "flavor": "줄진이 인간들을 고용할 때 사용하는 도구입니다.",
+    "id": "TRL_111",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "인간사냥꾼의 손도끼",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b>\n내 전장에 야수가 있으면, 내구도를\n+1 얻습니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50644,
+    "flavor": "야수의 내면은 어차피 야수이지 않을까요.",
+    "id": "TRL_119",
+    "name": "내면의 야수",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0,
+      "REQ_TARGET_WITH_RACE": 20
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "아군 야수에게 +1/+1을 부여합니다. 그 야수가 무작위 적 하수인을 공격합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jim Nelson",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50773,
+    "flavor": "약탈팟 모읍니다. (해적 풀)",
+    "id": "TRL_124",
+    "mechanics": [
+      "COMBO"
+    ],
+    "name": "약탈",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "내 덱에서 해적을 둘 뽑습니다. <b>연계:</b> 무기도 뽑습니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 6,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50774,
+    "elite": true,
+    "flavor": "\"너희 셋! 대포 안에 기어들어 가!\"",
+    "health": 3,
+    "id": "TRL_126",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "선장 후크터스크",
+    "race": "PIRATE",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 내 덱에서\n해적을 셋 소환합니다.\n그 해적들에게 <b>속공</b>을\n부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50779,
+    "flavor": "하늘에서 포탄이 빗발친다!",
+    "id": "TRL_127",
+    "name": "대포 포화",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "무작위 적에게 피해를 $3 줍니다.\n내 해적의 수만큼 반복합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 50794,
+    "flavor": "암사륜안으로 보면 0마나에 '피해를 3 줍니다.'라는군요.",
+    "id": "TRL_128",
+    "name": "재생성",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "생명력을 #3 회복시킵니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 3,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50315,
+    "flavor": "\"친구가 없으면 어때! 나처럼 이렇게 만들면 되는데!\"",
+    "health": 3,
+    "id": "TRL_131",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "모래 노역꾼",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "내가 주문을 시전할 때마다 <b>도발</b> 능력이 있는 1/1 좀비를 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Peter Stapleton",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50731,
+    "flavor": "장의사가 메타를 지배할 때를 기억한다는군요.",
+    "health": 1,
+    "id": "TRL_151",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "왕년의 최강자",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b>\n5/5 유망주를 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50749,
+    "flavor": "스랄이 둠해머를 빌려줄 리는 없다보니...",
+    "id": "TRL_156",
+    "name": "훔친 강철",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "다른 직업의 무기를 <b>발견</b>합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50766,
+    "flavor": "추락하는 것은 날개가 없는 법이죠.",
+    "id": "TRL_157",
+    "name": "판자 위를 걸어라!",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0,
+      "REQ_UNDAMAGED_TARGET": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]피해를 받지 않은\n하수인을 처치합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Christopher Hayes",
+    "attack": 0,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49944,
+    "flavor": "\"로티! 로티! 그거 물면 안 돼! 로티, 앉아! 앉아!!\"",
+    "health": 3,
+    "id": "TRL_223",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "랩터의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n내 영웅이 공격하여\n하수인을 처치한 후에,\n카드를 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Luca Zontini",
+    "attack": 7,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49973,
+    "flavor": "\"아들아! 내 가면과 공성추를 가져오너라.\"",
+    "health": 7,
+    "id": "TRL_232",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "무쇠가죽 공포뿔",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>압살:</b> 5/5 새끼 무쇠가죽 공포뿔을 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jesper Ejsing",
+    "attack": 2,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 49984,
+    "flavor": "(영웅에게) \"물어!\"",
+    "health": 3,
+    "id": "TRL_240",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "야성적인 공격병",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_HERO_HAS_ATTACK": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "내 영웅의 공격력만큼 피해",
+    "text": "<b>전투의 함성:</b>\n적 하수인에게 내 영웅의 공격력만큼 피해를 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Christopher Hayes",
+    "attack": 4,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 49985,
+    "elite": true,
+    "flavor": "공크에게 복종하지 않는 잔달라 드루이드들을 지칭하는 말이 있습니다. \"저녁 식사\".",
+    "health": 9,
+    "id": "TRL_241",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "랩터 공크",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]내 영웅이 공격하여\n하수인을 처치한 후에,\n내 영웅이 다시 공격할\n수 있습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Rudy Siswanto",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 49990,
+    "flavor": "빈 상자 안에 뛰어 들어가려는 엄청난 충동을 가지고 있습니다.",
+    "id": "TRL_243",
+    "name": "암습",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "이번 턴에\n내 영웅이 공격력을\n+2 얻습니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Clint Langley",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 49994,
+    "flavor": "누가 녀석의 먹거리를 훔쳐먹었나 봅니다.",
+    "id": "TRL_244",
+    "name": "포식자의 본능",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]내 덱에서\n야수를 뽑습니다.\n그 야수의 생명력을\n2배 증가시킵니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mauricio Herrera",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50002,
+    "flavor": "카드가 10장인지 모르고 영웅 능력을 사용했을 때 내는 것.",
+    "id": "TRL_245",
+    "name": "비명",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "비용이 가장 낮은 카드를 버립니다.\n<b>모든</b> 하수인에게\n피해를 $2 줍니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50004,
+    "flavor": "\"이 주문을 시전하면 덱의 절반은 살아남을 것이다.\"",
+    "id": "TRL_246",
+    "name": "공허의 서약",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "각 플레이어의 덱을 절반씩 파괴합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Garner",
+    "attack": 6,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50006,
+    "flavor": "영혼은 아껴 쓰고, 나눠 쓰고, 바꿔 쓰고, 다시 써야하는 법이죠.",
+    "health": 6,
+    "id": "TRL_247",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "영혼감시관",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n이번 게임에서 내가 버린\n무작위 카드 3장을 내\n손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Skan Srisuwan",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50012,
+    "flavor": "\"다 좋은데 말이야, 자네만 없으면 좋겠군.\"",
+    "id": "TRL_249",
+    "name": "냉혹한 집결",
+    "playRequirements": {
+      "REQ_FRIENDLY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "아군 하수인을 처치합니다.\n내 하수인들에게 +1/+1을 부여합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 0,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50025,
+    "flavor": "난난난난난난난나, 난난난난난난나, 난난난난난난나!",
+    "health": 3,
+    "id": "TRL_251",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "박쥐의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n아군 하수인이 죽은 후에,\n내 손에 있는 하수인에게\n+1/+1을 부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50032,
+    "elite": true,
+    "flavor": "\"이런 미친 게임을 봤나!\"",
+    "health": 4,
+    "id": "TRL_252",
+    "mechanics": [
+      "LIFESTEAL",
+      "TAUNT",
+      "InvisibleDeathrattle"
+    ],
+    "name": "대여사제 제클릭",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>도발</b>, <b>생명력 흡수</b>\n이 하수인을 버리면, 이 하수인을 둘 복사하여 내 손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 1,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50034,
+    "elite": true,
+    "flavor": "진화로 형이 왜 거기서 나와...?",
+    "health": 1,
+    "id": "TRL_253",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "박쥐 히르이크",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n이 하수인을 복사하여\n내 전장을 가득 채웁니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Mauricio Herrera",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50042,
+    "flavor": "징표의 로아인 로아의 징표입니다.",
+    "id": "TRL_254",
+    "mechanics": [
+      "CHOOSE_ONE"
+    ],
+    "name": "로아의 징표",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>선택</b> - 하수인에게 +2/+4와 <b>도발</b>을 부여합니다. 또는 3/2 랩터를 2마리 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Andrew Hou",
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50044,
+    "flavor": "구루바시 투기장은 육식 애완동물도 마음껏 데려올 수 있는 직장이랍니다.",
+    "id": "TRL_255",
+    "name": "쇄도의 포효",
+    "playRequirements": {
+      "REQ_FRIENDLY_MINION_OF_RACE_IN_HAND": 20,
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]내 손에 있는 무작위\n야수를 소환합니다.\n그 야수에게 <b>속공</b>을\n부여합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Luke Mancini",
+    "attack": 5,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50070,
+    "flavor": "영화관을 증정할 정도로 피를 뽑습니다.",
+    "health": 8,
+    "id": "TRL_257",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "혈트롤 피탐식자",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]아군 하수인이 죽은 후에,\n적 영웅에게 피해를\n2 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Vladimir Kafanov",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50071,
+    "flavor": "\"아, 어제 샀는데 할인을 왜 오늘 하냐고!\"",
+    "id": "TRL_258",
+    "name": "대규모 실성",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>모든</b> 하수인이 무작위 하수인을 공격합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Ormandelli",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50082,
+    "elite": true,
+    "flavor": "누구나 공주가 되고 싶어 하죠. 머리 장식의 무게는 전혀 생각하지 않고.",
+    "health": 5,
+    "id": "TRL_259",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "공주 탈란지",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 내 손에서\n게임이 시작됐을 때\n내 덱에 없던 모든\n 하수인을 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50087,
+    "elite": true,
+    "flavor": "외쳐! V13D!",
+    "health": 7,
+    "id": "TRL_260",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "망자 브원삼디",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n내 손이 가득 찰 때까지\n내 덱에서 비용이 1인\n하수인을 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Gimaldinov",
+    "attack": 7,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 25,
+    "dbfId": 49981,
+    "elite": true,
+    "flavor": "데칼은 무릎을 꿇고 자신의 무기를 시르밸라의 제단에 놓았습니다. 그의 헌신에 감명받은 시르밸라는 앞발로 천천히 무기를 제단에서 떨어트렸습니다.",
+    "health": 5,
+    "id": "TRL_300",
+    "mechanics": [
+      "DIVINE_SHIELD",
+      "LIFESTEAL",
+      "RUSH"
+    ],
+    "name": "호랑이 시르밸라",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>천상의 보호막</b>, <b>속공</b>, <b>생명력 흡수</b>\n내가 주문에 소모한 마나만큼 비용이 감소합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 49999,
+    "flavor": "세 살배기 아이들을 상대할 때 효과적입니다.",
+    "id": "TRL_302",
+    "name": "잠깐!",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "COMMON",
+    "referencedTags": [
+      "IMMUNE"
+    ],
+    "set": "TROLL",
+    "text": "내 다음 턴까지 내 영웅이 <b>면역</b> 상태가 됩니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "M. Alvares & M. Azevedo",
+    "attack": 3,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50014,
+    "durability": 3,
+    "flavor": "뭔가 험악해 보이는 도끼입니다.",
+    "id": "TRL_304",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "파락키 전투도끼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>압살</b>: 내 손에 있는 하수인에게 +2/+2를 부여합니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "James Ryman",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50019,
+    "flavor": "...설마 '그' 도전자는 아니겠죠?",
+    "id": "TRL_305",
+    "name": "새로운 도전자",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER",
+      "DIVINE_SHIELD",
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "[x]비용이 6인 하수인을\n<b>발견</b>합니다. 그 하수인에게\n<b>도발</b>과 <b>천상의 보호막</b>을\n부여하여 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Maria Trepalina",
+    "attack": 1,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50022,
+    "flavor": "거참 신박한 능력이군요.",
+    "health": 3,
+    "id": "TRL_306",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "불멸의 정무관",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]<b>죽음의 메아리:</b> 이\n하수인을 내 덱에 섞어\n넣습니다. 모든 강화\n효과가 유지됩니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50028,
+    "flavor": "잠깐! 카메라 가지고 들어오시면 안 됩니다!",
+    "id": "TRL_307",
+    "name": "빛의 섬광",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "생명력을 #4 회복시킵니다.\n카드를 뽑습니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 3,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50126,
+    "elite": true,
+    "flavor": "\"...그러다가 생명력이 딱 1 남았는데 이겼다니까!\"",
+    "health": 4,
+    "id": "TRL_308",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "대사제 데칼",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 영웅의 생명력을 1로 만듭니다. 감소한 생명력만큼 방어도를 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Gimaldinov",
+    "attack": 0,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50031,
+    "flavor": "개박하의 제단에 가깝습니다.",
+    "health": 3,
+    "id": "TRL_309",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "호랑이의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n내가 주문을 시전한 후에, 그\n주문의 비용과 능력치가 같은\n호랑이를 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 0,
+    "dbfId": 50120,
+    "flavor": "비결은 기름입니다.",
+    "id": "TRL_310",
+    "name": "정령술 연마",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]이번 턴에 내가 내는\n다음 정령의 비용이\n(2) 감소합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Ware Lee",
+    "attack": 3,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50121,
+    "flavor": "비전력은... 길을 찾기 마련이지.",
+    "health": 3,
+    "id": "TRL_311",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "비전공룡",
+    "race": "ELEMENTAL",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 내가 이전\n턴에 정령을 냈다면,\n다른 <b>모든</b> 하수인에게\n피해를 3 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50083,
+    "flavor": "지금까지 이 정도로 격렬한 분노를 느낀 적이 없었어.",
+    "health": 3,
+    "id": "TRL_312",
+    "name": "주문 광전사",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "SPELLPOWER"
+    ],
+    "set": "TROLL",
+    "text": "피해를 받은 상태면 <b>주문 공격력 +2</b>를 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50122,
+    "flavor": "불태우기로 뿔 태우는 중",
+    "id": "TRL_313",
+    "name": "불태우기",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]하수인에게 피해를\n$4 줍니다. 내가 이전\n턴에 정령을 냈다면,\n비용이 (1)이 됩니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50084,
+    "flavor": "불장난을 좋아합니다.",
+    "health": 4,
+    "id": "TRL_315",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "방화광",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "내 영웅 능력으로 하수인을 처치할 때마다 카드를 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 4,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "collectionText": "<b>전투의 함성:</b> 이번 게임에서\n내 영웅 능력으로 피해를 8 이상 줬다면, 불의 군주 라그나로스를 소환합니다.",
+    "cost": 7,
+    "dbfId": 50088,
+    "elite": true,
+    "flavor": "스태그헬름을 이은 3대 청지기라고 해도 되겠군요.",
+    "health": 4,
+    "id": "TRL_316",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "용매 잔알라이",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 이번 게임에서\n내 영웅 능력으로 피해를 8 이상 줬다면, 불의 군주 라그나로스를 소환합니다.@ <i>({0} 남음!)</i>@ <i>(달성!)</i>",
+    "type": "MINION"
+  },
+  {
+    "artist": "J. Axer",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50086,
+    "flavor": "실례합니다만 지금 불타고들 계십니다.",
+    "id": "TRL_317",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "화염 폭풍",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>모든</b> 하수인에게 피해를 $2 줍니다.\n<b>압살</b>: 무작위 마법사 주문을 내 손으로 가져옵니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mike Sass",
+    "attack": 5,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50095,
+    "elite": true,
+    "flavor": "예술은 뭐다?",
+    "health": 5,
+    "id": "TRL_318",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "사술 군주 말라크라스",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성</b>:\n내 시작 카드를 복사하여\n내 손으로 가져옵니다.\n<i>(이 카드 제외)</i>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 0,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50093,
+    "flavor": "용매들은 정확도와는 거리가 멉니다.",
+    "health": 3,
+    "id": "TRL_319",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "용매의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n내 영웅 능력이\n양옆의 하수인들도\n대상으로 지정합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50040,
+    "flavor": "널 마무리할 수 없다면 압도해버리겠어.",
+    "id": "TRL_321",
+    "name": "압도",
+    "playRequirements": {
+      "REQ_DAMAGED_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "피해를 받은 하수인에게 피해를 $4 줍니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "attack": 5,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50049,
+    "flavor": "그 비늘... 비브라늄인가?",
+    "health": 5,
+    "id": "TRL_323",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "잿불비늘 비룡",
+    "race": "DRAGON",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n내 손에 용족이 있으면,\n방어도를 +5 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Alex Horley Orlandelli",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50054,
+    "flavor": "여기도 반짝이고 저기도 반짝이는 커다란 금속입니다.",
+    "id": "TRL_324",
+    "name": "헤비메탈!",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "내 방어도와 같은 비용의 무작위 하수인을 소환합니다. <i>(최대 10)</i>",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jason Kang",
+    "attack": 4,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50056,
+    "durability": 4,
+    "flavor": "\"그립타가 자신 있게 추천하는 무기, 술트라제입니다! 한 번 휘두르면 4의 피해를, 두 번 휘두르면 8의 피해를 주는 무기입니다! 여러분이 싸우는 방식을 술트라제로 바꿔보세요!\"",
+    "id": "TRL_325",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "술트라제",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>압살:</b> 다시 공격할 수 있습니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 3,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50059,
+    "flavor": "이쯤 되면 별명이 무엇이 될지 짐작이 가는군요.",
+    "health": 2,
+    "id": "TRL_326",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "가시불꽃 창병",
+    "playRequirements": {
+      "REQ_DAMAGED_TARGET": 0,
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_DRAGON_IN_HAND": 0
+    },
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "targetingArrowText": "피해를 받은 적 하수인 처치",
+    "text": "[x]<b>전투의 함성:</b> 내 손에\n용족이 있으면, 피해를 받은\n적 하수인을 처치합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 0,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 52242,
+    "flavor": "돌진은 죽었다.",
+    "health": 3,
+    "id": "TRL_327",
+    "mechanics": [
+      "AURA",
+      "STEALTH"
+    ],
+    "name": "코뿔소의 혼",
+    "rarity": "RARE",
+    "referencedTags": [
+      "IMMUNE",
+      "RUSH"
+    ],
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n내 <b>속공</b> 하수인들은 소환된\n턴에 <b>면역</b> 상태가 됩니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "attack": 4,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50066,
+    "elite": true,
+    "flavor": "구루바시, 소리 질러!",
+    "health": 3,
+    "id": "TRL_328",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "대장군 분",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b>\n내 손에 있는 모든\n용족을 복사합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 5,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50074,
+    "elite": true,
+    "flavor": "대부분의 트롤들은 \"아아아아!\"까지만 말하고 \"칼리\"까지는 말하지 못합니다.",
+    "health": 5,
+    "id": "TRL_329",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "코뿔소 아칼리",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>속공</b>, <b>압살:</b> 내 덱에서 <b>속공</b> 하수인을 뽑습니다. 그 하수인에게 +5/+5를 부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Rudy Siswanto",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50212,
+    "flavor": "\"킁킁이니?\" \"아뇨, 레오큰데요.\"",
+    "id": "TRL_339",
+    "name": "주인의 부름",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "내 덱에서 하수인을 <b>발견</b>합니다. 그 하수인들이 모두 야수면, 카드 3장을 모두 뽑습니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 4,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50356,
+    "flavor": "변신해라, 나무나무!",
+    "health": 4,
+    "id": "TRL_341",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "나무예언자",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 나무정령들을 5/5 고대정령으로 변신시킵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "attack": 1,
+    "cardClass": "DRUID",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 43310,
+    "elite": true,
+    "flavor": "\"라바사우루스!\" \"무섭겠네.\" \"...블라모닥스!\" \"그런 공룡이 있어?\" \"스맥소돈!\" \"...이제 그냥 막 만들어내네.\"",
+    "health": 2,
+    "id": "TRL_343",
+    "mechanics": [
+      "CHOOSE_ONE"
+    ],
+    "name": "전쟁드루이드 로티",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>선택 - </b>네 가지 공룡 중 하나로 변신합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 4,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50369,
+    "elite": true,
+    "flavor": "크라그와에게는 친구에게 경의를 표하는 의식과 적을 집어삼키는 의식이 있습니다. 둘이 어떻게 다른지는 아무도 모릅니다.",
+    "health": 6,
+    "id": "TRL_345",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "개구리 크라그와",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내가 이전 턴에 낸 모든 주문을 내 손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Anton Zemskov",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50466,
+    "flavor": "일반 카드지만 스테이크는 레어입니다.",
+    "id": "TRL_347",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "미끼용 화살",
+    "playRequirements": {
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "피해를 $3 줍니다. <b>압살:</b> 5/5 데빌사우루스를 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Vladimir Kafanov",
+    "attack": 1,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 49824,
+    "flavor": "스라소니가 끔찍한 이유는 스라소니가 끔찍하기 때문입니다.",
+    "health": 1,
+    "id": "TRL_348",
+    "mechanics": [
+      "BATTLECRY",
+      "RUSH"
+    ],
+    "name": "갈기발 스라소니",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>속공</b>, <b>전투의 함성:</b>\n<b>속공</b> 능력이 있는\n1/1 스라소니를 내\n손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Gonzalo Ordonez",
+    "attack": 2,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50471,
+    "flavor": "\"명치 달려.\"는 <i>전략</i>이라기보단 <i>전술</i>에 가깝죠.",
+    "health": 4,
+    "id": "TRL_349",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "붉은머리 전략가",
+    "rarity": "RARE",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 영웅이 무기를 장착하고 있으면, 주문을 <b>발견</b>합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 50547,
+    "flavor": "\"아, 종양을 저렇게 전염시키는 거였군요!\"",
+    "id": "TRL_351",
+    "mechanics": [
+      "OVERLOAD"
+    ],
+    "name": "두꺼비 소나기",
+    "overload": 3,
+    "playRequirements": {
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>도발</b> 능력이 있는 2/4\n두꺼비를 셋 소환합니다.\n<b>과부하:</b> (3)",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Jakub Kasber",
+    "attack": 1,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50550,
+    "durability": 3,
+    "flavor": "강아지들이 좋아합니다.",
+    "id": "TRL_352",
+    "mechanics": [
+      "AURA"
+    ],
+    "name": "츄르릅 봉",
+    "rarity": "RARE",
+    "referencedTags": [
+      "OVERLOAD"
+    ],
+    "set": "TROLL",
+    "text": "내 마나 수정이 <b>과부하</b>된 동안 공격력을 +2 얻습니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50595,
+    "durability": 4,
+    "flavor": "\"이건 고통의 수행사제한테, 이건 검은울음 포탑한테, 이건 썩은얼굴한테...\"",
+    "id": "TRL_360",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "대군주의 채찍",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]내가 하수인을 낸\n후에, 그 하수인에게\n피해를 1 줍니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "Slawomir Maniak",
+    "cardClass": "WARRIOR",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50602,
+    "flavor": "용의 요들과는 다릅니다.",
+    "id": "TRL_362",
+    "name": "용의 포효",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "무작위 용족 둘을 내 손으로 가져옵니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50796,
+    "flavor": "얼마나 감내해야 할지 알 수도요.",
+    "health": 3,
+    "id": "TRL_363",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "사로나이트 작업반장",
+    "rarity": "COMMON",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>죽음의 메아리:</b>\n상대편에게 <b>도발</b> 능력이\n있는 0/3 풀려난 노예를\n소환해 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jesper Ejsing",
+    "attack": 1,
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50381,
+    "flavor": "\"잔달라 트롤들은 정도껏을 모르나.\"",
+    "health": 1,
+    "id": "TRL_390",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "대담한 불놀이꾼",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 이번 턴의\n내 다음 영웅 능력이\n피해를 2 더 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "L. Lullabi & K. Turovec",
+    "cardClass": "MAGE",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50230,
+    "flavor": "육체와 영혼을 분리해 주마!",
+    "id": "TRL_400",
+    "mechanics": [
+      "SECRET"
+    ],
+    "name": "갈라지는 환영",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>비밀:</b> 내 하수인이\n공격받으면, 그 하수인을\n복사하여 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "E. Kenji & M. Azevedo",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50491,
+    "flavor": "비법은 배를 부드럽게 문지르는 것입니다.",
+    "health": 4,
+    "id": "TRL_405",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "거친 야수조련사",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "내가 야수를 뽑을 때마다 그 야수에게 +2/+2를 부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50493,
+    "flavor": "하품이 절로 나오는 카드군요.",
+    "health": 4,
+    "id": "TRL_406",
+    "mechanics": [
+      "ENRAGED"
+    ],
+    "name": "꾸벅거리는 저격수",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "피해를 받은 상태면 공격력을 +4 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ekaterina Shapovalova",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50497,
+    "flavor": "성분: 트롤의 땀 100%",
+    "health": 1,
+    "id": "TRL_407",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "물통 담당",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 이번 턴의\n내 다음 영웅 능력의\n비용이 (0)이 됩니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dave Allsop",
+    "attack": 7,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 12,
+    "dbfId": 50539,
+    "flavor": "트롤들은 팔다리를 재생할 수 있습니다. 남은 팔다리로는 이런 걸 만들죠.",
+    "health": 8,
+    "id": "TRL_408",
+    "mechanics": [
+      "TAUNT"
+    ],
+    "name": "무덤괴수",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>도발</b>\n이번 게임에서 내가 시전한 주문 하나당 비용이 (1)씩 감소합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Anton Zemskov",
+    "attack": 2,
+    "cardClass": "ROGUE",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50775,
+    "elite": true,
+    "flavor": "???: 저기 몇 달이나 들어가 있었다고요!",
+    "health": 2,
+    "id": "TRL_409",
+    "mechanics": [
+      "BATTLECRY",
+      "DEATHRATTLE"
+    ],
+    "name": "상어 그랄",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 내 덱에\n있는 하수인을 잡아먹고 그\n하수인의 능력치를 얻습니다.\n<b>죽음의 메아리:</b> 그 하수인을\n내 손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Maria Trepalina",
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50282,
+    "flavor": "포기하지 마세요. 굴복하세요!",
+    "id": "TRL_500",
+    "name": "광기에 굴복하라",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "내 마나 수정을 3개 파괴합니다. 내 덱에 있는 모든 하수인에게 +2/+2를 부여합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Lemon Sky",
+    "attack": 3,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50283,
+    "flavor": "\"자, 여러분, 미리 치유하는 건 잊지 않으셨죠?\"",
+    "health": 2,
+    "id": "TRL_501",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "아키나이 환영",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 이번 턴에\n생명력을 회복시키는 내\n카드와 능력들이 그만큼의\n피해를 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 0,
+    "cardClass": "PRIEST",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50352,
+    "flavor": "살아서든 죽어서든 그와 함께하게 됩니다.",
+    "health": 3,
+    "id": "TRL_502",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "망자의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "1턴 동안 <b>은신</b>을 얻습니다.\n아군 하수인이 죽은 후에,\n그 하수인을 비용이 1인 하수인으로 복사하여\n내 덱에 섞어 넣습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50372,
+    "flavor": "오믈렛은 맛있다고 해서 만들어 보려다가 얼굴이 뜯길 뻔했습니다.",
+    "health": 2,
+    "id": "TRL_503",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "딱정벌레 알",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b>\n1/1 딱정벌레를\n3마리 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50374,
+    "flavor": "하지만 걱정하지 마라. 손은 눈보다 빠르니까 동전을 쓰고 산악 거인을 바로 내면 된다.",
+    "health": 3,
+    "id": "TRL_504",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "무법항 도박사",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n상대편에게 동전을 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50377,
+    "flavor": "원문에도 없는 야수를 이름에 왜 붙였냐고요? 그야... 음...",
+    "health": 1,
+    "id": "TRL_505",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "순진한 새끼 야수",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b> 내 손에 있는 무작위 야수의 비용이 (1) 감소합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ivan Fomin",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50380,
+    "flavor": "압살했닭! 오늘 저녁은 치킨이닭!",
+    "health": 1,
+    "id": "TRL_506",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "구루바시 닭",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>압살:</b> 공격력을 +5 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Peter Stapleton",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50383,
+    "flavor": "뚜루루 뚜루!",
+    "health": 2,
+    "id": "TRL_507",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "상어팀 구경꾼",
+    "race": "PIRATE",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "내 영웅이 공격한 후에 1/1 해적을 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50385,
+    "flavor": "마음의 상처는 재생하지 못합니다.",
+    "health": 5,
+    "id": "TRL_508",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "재생하는 불량배",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]내 턴이 시작될 때,\n이 하수인의 생명력을\n#2 회복시킵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Jim Nelson",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50386,
+    "flavor": "바나나 많아요! 드셔보세요!",
+    "health": 2,
+    "id": "TRL_509",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "바나나 장사꾼",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b>\n바나나 2개를 내\n손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Ekaterina Shapovalova",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50391,
+    "flavor": "무시무시한 아킬레사우루스를 사냥하는 자입니다.",
+    "health": 1,
+    "id": "TRL_512",
+    "mechanics": [
+      "BATTLECRY",
+      "LIFESTEAL"
+    ],
+    "name": "약삭빠른 발목깨물이",
+    "playRequirements": {
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "피해 1",
+    "text": "<b>생명력 흡수</b>, <b>전투의 함성:</b> 피해를 1 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dan Scott",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50392,
+    "flavor": "규칙을 읽지 못하면 어길 수도 없죠.",
+    "health": 14,
+    "id": "TRL_513",
+    "mechanics": [
+      "DIVINE_SHIELD",
+      "TAUNT"
+    ],
+    "name": "모쉬오그 집행자",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>도발</b>\n<b>천상의 보호막</b>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Brian Despain",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50393,
+    "flavor": "아직도 브원삼디의 좀비들을 응원하고 있습니다.",
+    "health": 4,
+    "id": "TRL_514",
+    "mechanics": [
+      "BATTLECRY",
+      "TAUNT"
+    ],
+    "name": "술 취한 노움",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>도발</b>, <b>전투의 함성:</b> 상대편에게 하수인이 둘 이상 있으면, 공격력을 +1 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Paul Mafayon",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50395,
+    "flavor": "\"여기가 어디라고 신발을 신고 들어와?!\"",
+    "health": 7,
+    "id": "TRL_515",
+    "mechanics": [
+      "TAUNT"
+    ],
+    "name": "성깔 있는 문지기",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>도발</b>, 적 하수인\n하나당 비용이 (1)씩 감소합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Izzy Hoover",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50396,
+    "flavor": "한정된 기간 동안 로아의 축복 1+1 행사를 하고 있습니다. (제물에 따라 유효하지 않을 수 있습니다.)",
+    "health": 2,
+    "id": "TRL_516",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "구루바시 공물",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "[x]내 턴이 시작될 때,\n이 하수인을 파괴하고\n방어도를 +8 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50397,
+    "flavor": "\"트롤의 멋짐을 모르는 당신은 불쌍해요!\"",
+    "health": 3,
+    "id": "TRL_517",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "열렬한 관객",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 손에 있는 모든 하수인에게 +1/+1을 부여합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50402,
+    "flavor": "수프를 만들거나, 수프가 되거나...",
+    "health": 2,
+    "id": "TRL_520",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "요리사 멀록",
+    "race": "MURLOC",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b> 내 덱에서 멀록을 2마리 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Eric Braddock",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50403,
+    "flavor": "입장권이 있다면 다들 모여!",
+    "health": 3,
+    "id": "TRL_521",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "투기장 손님",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "<b>압살:</b> 다른\n투기장 손님을 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 2,
+    "cardClass": "SHAMAN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50405,
+    "flavor": "\"야! 2뎀도 많이 준 거야!\"",
+    "health": 1,
+    "id": "TRL_522",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "종양 전염꾼",
+    "playRequirements": {
+      "REQ_TARGET_IF_AVAILABLE_AND_MINIMUM_SPELLS_PLAYED_THIS_TURN": 2
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "targetingArrowText": "피해 2",
+    "text": "<b>전투의 함성:</b>\n내가 이번 턴에 주문을 2번 냈다면,\n피해를 2 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Eva Widermann",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50408,
+    "flavor": "\"몸에 불 붙으면 멈춰, 누워, 죽어.\"",
+    "health": 2,
+    "id": "TRL_523",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "불나무 의술사",
+    "rarity": "RARE",
+    "referencedTags": [
+      "DISCOVER"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n내 손에 용족이 있으면,\n주문을 <b>발견</b>합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "David Devries",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 50410,
+    "flavor": "가장 어두운 던전에 이어 투기장에도 모습을 보이는군요.",
+    "health": 1,
+    "id": "TRL_524",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "방패파괴자",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_MUST_TARGET_TAUNTER": 0,
+      "REQ_TARGET_IF_AVAILABLE": 0
+    },
+    "rarity": "RARE",
+    "referencedTags": [
+      "SILENCE",
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "targetingArrowText": "<b>도발</b> 하수인 <b>침묵</b>",
+    "text": "<b>전투의 함성:</b> <b>도발</b> 능력이 있는 적 하수인을 <b>침묵</b>시킵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 0,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50411,
+    "flavor": "이걸 여는 데 그렇게 오랜 시간이 걸릴 줄 누가 알았겠습니까.",
+    "health": 4,
+    "id": "TRL_525",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "투기장 보물상자",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b>\n카드를 2장 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Maurico Herrera",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50412,
+    "flavor": "알라나에게서 도망간 녀석이 어디 갔나 했더니...",
+    "health": 6,
+    "id": "TRL_526",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "용아귀 화염용",
+    "race": "DRAGON",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n다른 <b>모든</b> 하수인에게\n피해를 1 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Cicily He",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50414,
+    "flavor": "방패 밀쳐내기와 토템의 힘을 뽑고 서로 난처해하는 모습이다.",
+    "health": 4,
+    "id": "TRL_527",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "드라카리 요술사",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 각 플레이어가 상대편의 덱에서 무작위 카드를 복사하여 손으로 가져옵니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Paul Mafayon",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50416,
+    "flavor": "다른 이름은 '깨부숴주마'입니다.",
+    "health": 10,
+    "id": "TRL_528",
+    "mechanics": [
+      "OVERKILL"
+    ],
+    "name": "박살마",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "<b>압살:</b> 이 하수인의 공격력이 2배가 됩니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Alex Horley Ormandelli",
+    "attack": 2,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50421,
+    "flavor": "수수께끼의 도전자가 수수께끼의 종자였던 시절부터 알고 지냈습니다.",
+    "health": 4,
+    "id": "TRL_530",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "복면 쓴 도전자",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "SECRET"
+    ],
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b> 내 영웅에게\n<b>비밀</b>이 걸려 있으면,\n내 덱에 있는 <b>비밀</b>을\n사용합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sam Nielsen",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50427,
+    "flavor": "\"데드 맨 워킹.\"",
+    "health": 2,
+    "id": "TRL_531",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "전율엄니 난투꾼",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b>\n3/2 전율엄니 싸움꾼을 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Steve Prescott",
+    "attack": 6,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50430,
+    "flavor": "삶은 그저 0과 1의 조합이 아닙니다. 하지만 앞에 K가 붙으면 아주 끝내주는 진행자라 할 수 있죠.",
+    "health": 5,
+    "id": "TRL_532",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "모쉬오그 진행자",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "이 하수인을 공격하는 적은 50%의 확률로 엉뚱한 캐릭터를 공격합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 4,
+    "dbfId": 50434,
+    "flavor": "북극곰 특급에 탑승할 준비가 되셨습니까?",
+    "health": 5,
+    "id": "TRL_533",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "아이스크림 행상인",
+    "rarity": "EPIC",
+    "referencedTags": [
+      "FREEZE"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 전장에 <b>빙결</b> 상태인 하수인이 있으면, 방어도를\n+8 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Matt Dixon",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50437,
+    "flavor": "아뇨, 트롤이 아니라 거북이가 투사입니다.",
+    "health": 8,
+    "id": "TRL_535",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "덥석턱 등껍질투사",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "text": "양옆의 하수인들이 피해를 받을 때마다\n이 하수인이 그 피해를 대신 받습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Clint Langley",
+    "attack": 8,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50443,
+    "elite": true,
+    "flavor": "첫 번째 죽음의 메아리: 카드를 뽑습니다.\n두 번째 죽음의 메아리: 카드를 2장 뽑습니다.\n세 번째 죽음의 메아리: 16피트 높이의 철장에서 몬카인드를 아나운서의 탁자까지 던집니다.",
+    "health": 5,
+    "id": "TRL_537",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "언더테이카",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "DEATHRATTLE"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 이번 게임에서 죽은 무작위 아군 하수인 셋의 <b>죽음의 메아리</b> 능력을 얻습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Izzy Hoover",
+    "attack": 9,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 10,
+    "dbfId": 50454,
+    "elite": true,
+    "flavor": "경고: 오염된 피에 감염된 상태로 대도시에 들어가지 마세요!",
+    "health": 6,
+    "id": "TRL_541",
+    "mechanics": [
+      "DEATHRATTLE"
+    ],
+    "name": "영혼약탈자 학카르",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>죽음의 메아리:</b>\n각 플레이어의 덱에 오염된 피를 섞어 넣습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 7,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 9,
+    "dbfId": 50459,
+    "elite": true,
+    "flavor": "데빌사우루스를 갑주와 깃털로 치장하는 일은 트롤 문화권에서 명망이 높은 편이지만 장기 근속은 아무래도 어렵다고 합니다.",
+    "health": 7,
+    "id": "TRL_542",
+    "mechanics": [
+      "OVERKILL",
+      "RUSH"
+    ],
+    "name": "운다스타",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>속공</b>, <b>압살:</b> 내 손에 있는 야수를 소환합니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "attack": 2,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "cost": 1,
+    "dbfId": 50512,
+    "durability": 2,
+    "flavor": "이 무기는... 아야! 아주 섬세하게... 아야! 다뤄야 한다고.",
+    "id": "TRL_543",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "피발톱",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]<b>전투의 함성:</b>\n내 영웅에게 피해를\n5 줍니다.",
+    "type": "WEAPON"
+  },
+  {
+    "artist": "James Ryman",
+    "attack": 4,
+    "cardClass": "PALADIN",
+    "collectible": true,
+    "collectionText": "<b>전투의 함성:</b> 이번 게임에서 생명력을 10 이상 회복했으면, +4/+4와 <b>도발</b>을 얻습니다.",
+    "cost": 4,
+    "dbfId": 50514,
+    "flavor": "존다르... 기사단원이었던 자네가...!",
+    "health": 4,
+    "id": "TRL_545",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "잔달라 기사단원",
+    "rarity": "RARE",
+    "referencedTags": [
+      "TAUNT"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 이번 게임에서 생명력을 10 이상 회복했으면, +4/+4와 <b>도발</b>을 얻습니다.@ <i>({0} 남음!)</i>@ <i>(달성!)</i>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Zoltan Boros",
+    "attack": 3,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50532,
+    "flavor": "\"어이, 내 피자는 어디 있는 거야?!\"",
+    "health": 5,
+    "id": "TRL_546",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "심통난 거북이",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 영웅에게 피해를 5 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Vlad Botos",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 50776,
+    "flavor": "\"내가 저걸 얻으려고 얼마나 고생했는데! 이제 무더기로 나온다고?\"",
+    "health": 7,
+    "id": "TRL_550",
+    "mechanics": [
+      "RUSH",
+      "TAUNT"
+    ],
+    "name": "아마니 전투곰",
+    "race": "BEAST",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>속공</b>\n<b>도발</b>",
+    "type": "MINION"
+  },
+  {
+    "artist": "Konstantin Turovec",
+    "attack": 2,
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50863,
+    "flavor": "\"날 무모하다고 했었지? 난 그 말이 좋아. 사실이니까. 하지만 다른 건 몰라도... 날 무모하다고 놀리는 건 참을 수 없다!\"",
+    "health": 6,
+    "id": "TRL_551",
+    "mechanics": [
+      "BATTLECRY",
+      "TAUNT"
+    ],
+    "name": "무모한 트롤 투사",
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "<b>도발</b>, <b>전투의 함성:</b>\n비용이 가장 낮은\n카드를 버립니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Akkapoj T.",
+    "cardClass": "WARLOCK",
+    "collectible": true,
+    "cost": 8,
+    "dbfId": 50991,
+    "flavor": "하수인(이었던 것)",
+    "id": "TRL_555",
+    "name": "악마 화살",
+    "playRequirements": {
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_TO_PLAY": 0
+    },
+    "rarity": "COMMON",
+    "set": "TROLL",
+    "text": "[x]하수인을 처치합니다.\n내 전장에 있는 하수인\n하나당 비용이 (1)씩\n감소합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "J. Axer",
+    "attack": 5,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 6,
+    "dbfId": 51136,
+    "elite": true,
+    "flavor": "의술사 학위를 취득하고 싶었지만 학점이 모자랐다고 하네요.",
+    "health": 5,
+    "id": "TRL_564",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "모조전문가 지히",
+    "rarity": "LEGENDARY",
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 각 플레이어의 마나 수정을 5개로 만듭니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Dave Allsop",
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 51159,
+    "flavor": "이래서 사바나 사자가 전설 카드라는 겁니다.",
+    "id": "TRL_566",
+    "name": "야생의 복수",
+    "playRequirements": {
+      "REQ_FRIENDLY_MINION_OF_RACE_DIED_THIS_TURN": 20,
+      "REQ_NUM_MINION_SLOTS": 1
+    },
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "이번 턴에 죽은 내 야수들을 소환합니다.",
+    "type": "SPELL"
+  },
+  {
+    "artist": "Mike Sass",
+    "attack": 7,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 7,
+    "dbfId": 51816,
+    "flavor": "분위기를 뜨겁게 만드는 데에 제격이죠.",
+    "health": 4,
+    "id": "TRL_569",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "난동을 피우는 용",
+    "playRequirements": {
+      "REQ_ENEMY_TARGET": 0,
+      "REQ_MINION_TARGET": 0,
+      "REQ_TARGET_IF_AVAILABLE_AND_DRAGON_IN_HAND": 0
+    },
+    "race": "DRAGON",
+    "rarity": "EPIC",
+    "set": "TROLL",
+    "targetingArrowText": "적 하수인에게 피해 7",
+    "text": "[x]<b>전투의 함성:</b>\n내 손에 용족이 있으면,\n적 하수인에게\n피해를 7 줍니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Sean McNally",
+    "attack": 1,
+    "cardClass": "NEUTRAL",
+    "collectible": true,
+    "cost": 2,
+    "dbfId": 52931,
+    "flavor": "방금 투기장 바닥에서 담아온 따끈따끈한 수프입니다!",
+    "health": 4,
+    "id": "TRL_570",
+    "mechanics": [
+      "TRIGGER_VISUAL"
+    ],
+    "name": "수프 상인",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "내가 내 영웅의 생명력을 3 이상 회복시킬 때마다 카드를 뽑습니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 3,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 5,
+    "dbfId": 50659,
+    "elite": true,
+    "flavor": "너만 제때 잡으면 4공물인데!",
+    "health": 2,
+    "id": "TRL_900",
+    "mechanics": [
+      "BATTLECRY"
+    ],
+    "name": "스라소니 할라지",
+    "race": "BEAST",
+    "rarity": "LEGENDARY",
+    "referencedTags": [
+      "RUSH"
+    ],
+    "set": "TROLL",
+    "text": "<b>전투의 함성:</b> 내 손을 <b>속공</b> 능력이 있는 1/1 스라소니로 가득 채웁니다.",
+    "type": "MINION"
+  },
+  {
+    "artist": "Arthur Bozonnet",
+    "attack": 0,
+    "cardClass": "HUNTER",
+    "collectible": true,
+    "cost": 3,
+    "dbfId": 50660,
+    "flavor": "이 제단의 힘의 비밀은 캔 따는 소리입니다.",
+    "health": 3,
+    "id": "TRL_901",
+    "mechanics": [
+      "STEALTH",
+      "TRIGGER_VISUAL"
+    ],
+    "name": "스라소니의 혼",
+    "rarity": "RARE",
+    "set": "TROLL",
+    "text": "[x]1턴 동안 <b>은신</b>을 얻습니다.\n내가 야수를 소환할 때마다\n그 야수에게 +1/+1을\n부여합니다.",
     "type": "MINION"
   },
   {
