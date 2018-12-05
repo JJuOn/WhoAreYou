@@ -1,5 +1,3 @@
-const rp=require('request-promise')
-const mysql=require('../../database/mysql')
 const crawler=require('./crawler')
 const cheerio=require('cheerio')
 const addCards=require('../card/addCards')

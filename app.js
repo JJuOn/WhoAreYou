@@ -8,6 +8,8 @@ const rp=require('request-promise')
 const morgan=require('morgan')
 const cheerio=require('cheerio')
 const mysqlApostrophe=require('mysql-apostrophe')
+const ejs=require('ejs')
+const mysql=require('./database/mysql')
 require('dotenv').config()
 const app=express()
 
@@ -83,9 +85,22 @@ app.get('/decklist',(req,res)=>{
     if(!req.session.sid)
         res.redirect('/login')
     else{
-        fs.readFile('./views/html/decklist.html',(err,data)=>{
-            res.writeHead(200,{'Content-Type':'text/html'})
-            res.end(data)
+        mysql.getConnection((err,connection)=>{
+            if (err) throw err
+            connection.query(`select id,deckTitle from deck where deckOwner=\'${req.session.sid}\'`,(err,results,fields)=>{
+                if (err) throw err
+                else{
+                    console.log(results)
+                    console.log('length : '+results.length)
+                    fs.readFile('./views/ejs/decklist.ejs','utf-8',(err,data)=>{
+                        res.writeHead(200,{'Content-Type':'text/html'})
+                        res.end(ejs.render(data,{
+                            decks:results,
+                        }))
+                    })
+                }
+            })
+            connection.release()
         })
     }
 
