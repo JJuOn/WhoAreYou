@@ -1,4 +1,4 @@
-const crawler=require('./crawler')
+const crawler=require('./crawlerDeckCodes')
 const cheerio=require('cheerio')
 const addCards=require('../card/addCards')
 const addDeck=require('../../database/deck/addDeck')

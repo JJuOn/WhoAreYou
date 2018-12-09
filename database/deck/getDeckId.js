@@ -6,7 +6,7 @@ exports.GetDeckId=(deckOwner,deckTitle)=>{
             if (err) throw err
             connection.query(`select * from deck where deckOwner=\'${deckOwner}\' and deckTitle=\'${deckTitle}\'`,(err,results,field)=>{
                 if (err) throw err
-                console.log('result in getDeckId'+results[0])
+                //console.log('result in getDeckId'+results[0])
                 connection.release()
                 resolve(results[0].id)
             })

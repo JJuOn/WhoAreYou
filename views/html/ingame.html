@@ -32,6 +32,9 @@
                     }
                 })
             })
+            $('#submitButton').click(function(){
+
+            })
         })
     </script>
 </head>
@@ -66,17 +69,17 @@
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/c/c5/Garrosh_Hellscream%28635%29.png?version=bab934001bb784a94c59a47823d535a7" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="전사"/>전사
+                <input type="radio" name="checkOpponent" value="WARRIOR"/>전사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4b/Thrall%28319%29.png?version=adcee55715548b949a7d973c2fddbd95" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="주술사"/>주술사
+                <input type="radio" name="checkOpponent" value="SHAMAN"/>주술사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a4/Valeera_Sanguinar%282%29.png?version=84a816910b223169eb14cc93c20437b2" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="도적"/>도적
+                <input type="radio" name="checkOpponent" value="ROGUE"/>도적
             </div>
         </div>
         <br>
@@ -86,17 +89,17 @@
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4d/Uther_Lightbringer%28257%29.png?version=b45ade5ac3fdd2579160fe5d7b7c1b20" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="성기사"/>성기사
+                <input type="radio" name="checkOpponent" value="PALADIN"/>성기사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a0/Rexxar%28484%29.png?version=c21b57837db15d20cc814f2bf45682b6" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="사냥꾼"/>사냥꾼
+                <input type="radio" name="checkOpponent" value="HUNTER"/>사냥꾼
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/f/fa/Malfurion_Stormrage%28621%29.png?version=b3f5a40e33f33d32995f3becbdd7aa94" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="드루이드"/>드루이드
+                <input type="radio" name="checkOpponent" value="DRUID"/>드루이드
             </div>
         </div>
         <br>
@@ -106,17 +109,17 @@
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/0/0a/Gul%27dan%28618%29.png?version=90f421585c6f2d493ba94e259a76190e" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="흑마법사"/>흑마법사
+                <input type="radio" name="checkOpponent" value="WARLOCK"/>흑마법사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/3/3c/Jaina_Proudmoore%28320%29.png?version=75868a59a53f90bce829edeb66126b73" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="마법사"/>마법사
+                <input type="radio" name="checkOpponent" value="MAGE"/>마법사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/8/80/Anduin_Wrynn%28110%29.png?version=ba8ecc39b3fdd4a2ede72e046c434454" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="사제"/>사제
+                <input type="radio" name="checkOpponent" value="PRIEST"/>사제
             </div>
         </div>
         <br>
@@ -124,7 +127,7 @@
         <div class="row">
             <div class="col-md-5"></div>
             <div class="col-md-2">
-                <input class="btn btn-lg btn-primary btn-block" type="button" value="확인"/>
+                <input class="btn btn-lg btn-primary btn-block" type="button" id="submitButton" value="확인"/>
             </div>
             <div class="col-md-5"></div>
         </div>
