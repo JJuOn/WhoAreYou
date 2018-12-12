@@ -46,20 +46,9 @@ app.use(session({
 }))
 
 app.get('/',(req,res)=>{
-    res.redirect('/main')
+    res.redirect('/decklist')
 })
 
-app.get('/main',(req,res)=>{
-    console.log(`GET /main\ncurrent sid : ${req.session.sid}`)
-    if(!req.session.sid)
-        res.redirect('/login')
-    else {
-        fs.readFile('./views/html/main.html',(err,data)=>{
-            res.writeHead(200, {'Content-Type': 'text/html'})
-            res.end(data)
-        })
-    }
-})
 
 app.get('/signup',(req,res)=>{
     fs.readFile('./views/html/signup.html',(err,data)=>{
@@ -77,6 +66,7 @@ app.get('/login',(req,res)=>{
 
 app.post('/logout',(req,res)=>{
     console.log('logout')
+    delete req.session.deckId
     delete req.session.sid
     res.status(200).json({result:'Logout Successful'})
 })
@@ -106,10 +96,11 @@ app.get('/decklist',(req,res)=>{
 
 })
 
-app.get('/ingame',(req,res)=>{
+app.get('/ingame/:deckId',(req,res)=>{
     if(!req.session.sid)
         res.redirect('/login')
     else{
+        req.session.deckId=req.params.deckId
         fs.readFile('./views/html/ingame.html',(err,data)=>{
             res.writeHead(200,{'Content-Type':'text/html'})
             res.end(data)
@@ -127,7 +118,56 @@ app.get('/newdeck',(req,res)=>{
             res.end(data)
         })
     }
+})
 
+const getMulligan=require('./api/card/getMulligan')
+const getOpponent=require('./api/card/getOpponent')
+const getResult=require('./api/card/getResult')
+
+app.get('/result',(req,res)=>{
+    if(!req.session.sid)
+        res.redirect('/login')
+    else{
+        let mulligan
+        let opponentDecks;
+        (async ()=>{
+            const result=await getResult.GetResult(req,res)
+            console.log('hsreplay.net에서 받아오는 중')
+            /*setTimeout(function(){
+                console.log('result: ',result)
+                fs.readFile('./views/html/result.ejs',(err,data)=>{
+                    res.writeHead(200,{'Content-Type':'text/html'})
+                    res.end(ejs.render(data,{
+                        cards:result.cards || [],
+                        decks:result.decks || [],
+                    }))
+                })
+            },30000)*/
+        })()
+        const GetInfo=async ()=>{
+            return getResult.GetResult(req,res)
+        }
+        const GetCards=()=>{
+            return getMulligan.GetMulligan(req,res)
+        }
+        const GetDecks=(cards)=>{
+            mulligan=cards
+            return getOpponent.GetOpponent(req,res)
+        }
+        const Render=async (result)=>{
+            mulligan=result.cards
+            opponentDecks=result.decks
+            setTimeout(function(){
+                fs.readFile('./views/html/result.ejs',(err,data)=>{
+                    res.writeHead(200,{'Content-Type':'text/html'})
+                    res.end(ejs.render(data,{
+                        cards:mulligan || [],
+                        decks:opponentDecks || [],
+                    }))
+                })
+            },1000)
+        }
+    }
 })
 
 app.listen(process.env.SERVER_PORT || 3000,()=>{

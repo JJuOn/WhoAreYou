@@ -26,17 +26,19 @@ exports.getDecks=(opponentClass)=>{
     }
 
     const getDeckInfo=(content)=>{
-        const $=cheerio.load(content)
-        let deckNames=$('.deck-name')
-        let deckGames=$('.game-count')
-        let decks=[]
-        for(let i=0;i<3;i++){
-            let deckName=$(deckNames[i]).text()
-            let deckGame=$(deckGames[i]).text()
-            decks.push({deckTitle:deckName,deckGame:deckGame})
-        }
-        console.log(decks)
-        return decks
+        return new Promise((resolve,reject)=>{
+            const $=cheerio.load(content)
+            let deckNames=$('.deck-name')
+            let deckGames=$('.game-count')
+            let decks=[]
+            for(let i=0;i<3;i++){
+                let deckName=$(deckNames[i]).text()
+                let deckGame=$(deckGames[i]).text()
+                decks.push({deckTitle:deckName,deckGame:deckGame})
+            }
+            console.log(decks)
+            resolve(decks)
+        })
     }
     getContent()
         .then(getDeckInfo)

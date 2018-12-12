@@ -24,7 +24,7 @@
                     url:'/logout',
                     success:function(result){
                         alert('로그아웃 성공!')
-                        window.location.href='/main'
+                        window.location.href='/'
                     },
                     error:function(result){
                         alert('로그아웃 실패!')
@@ -67,7 +67,7 @@
             <br>
             <table class="table">
                 <% for ( var i=0;i<decks.length;i++) { %>
-                <tr><td style="text-align: center;"><a class="list-group-item" href="/ingame?deck=<%= decks[i].id %>"><%= decks[i].deckTitle %></a></td></tr>
+                <tr><td style="text-align: center;"><a class="list-group-item" href="/ingame/<%= decks[i].id %>"><%= decks[i].deckTitle %></a></td></tr>
                 <% } %>
             </table>
         </div>

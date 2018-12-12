@@ -24,7 +24,7 @@
                     url:'/logout',
                     success:function(result){
                         alert('로그아웃 성공!')
-                        window.location.href='/main'
+                        window.location.href='/'
                     },
                     error:function(result){
                         alert('로그아웃 실패!')
@@ -33,7 +33,27 @@
                 })
             })
             $('#submitButton').click(function(){
-
+                let data=new Object()
+                let opponentClass=$('input[name="checkOpponent"]:checked').val()
+                data.opponentClass=opponentClass
+                const stringData=JSON.stringify(data)
+                alert('잠시 기다리시겠습니까?')
+                $.ajax({
+                    type:'POST',
+                    url:'/api/card/setopponentclass',
+                    data:stringData,
+                    dataType:'JSON',
+                    contentType:'application/json; charset=utf-8',
+                    traditional:true,
+                    processdata:false,
+                    success:function(){
+                        window.location.href='/result'
+                    },
+                    error:function(){
+                        alert('상대 직업 선택 실패!')
+                        return false
+                    }
+                })
             })
         })
     </script>
@@ -48,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/main">Who Are You?</a>
+                <a class="navbar-brand" href="/">Who Are You?</a>
             </div>
             <div class="navbar-collapse collapse" id="navbar" aria-expanded="false" style="height: 1px;">
                 <ul class="nav navbar-nav">
@@ -89,7 +109,7 @@
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/4/4d/Uther_Lightbringer%28257%29.png?version=b45ade5ac3fdd2579160fe5d7b7c1b20" style="width:150px;height:200px;"/>
                 <br>
-                <input type="radio" name="checkOpponent" value="PALADIN"/>성기사
+                <input type="radio"  name="checkOpponent" value="PALADIN"/>성기사
             </div>
             <div class="col-md-4">
                 <img src="https://d1u5p3l4wpay3k.cloudfront.net/hearthstone_gamepedia/a/a0/Rexxar%28484%29.png?version=c21b57837db15d20cc814f2bf45682b6" style="width:150px;height:200px;"/>

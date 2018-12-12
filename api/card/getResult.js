@@ -2,9 +2,11 @@ const crawler=require('./crawlerMulligan')
 const getCardId=require('./getCardId')
 const puppeteer=require('puppeteer')
 const cheerio=require('cheerio')
-
-
-exports.GetMulligan=(req,res)=>{
+const fs=require('fs')
+const ejs=require('ejs')
+let globalMulligan
+let globalDecks
+exports.GetResult=(req,res)=>{
     const deckId=req.session.deckId || 113
     console.log('deckId in getMulligan',deckId)
     const opponentClass=req.session.opponentClass || 'PALADIN'
@@ -23,11 +25,8 @@ exports.GetMulligan=(req,res)=>{
     const GetCardId=()=>{
         return getCardId.GetCardId(deckId)
     }
-    const CrawlerMulligan=(cardIds)=>{
-        return crawler.getDecks(cardIds)
-    }
 
-    const GetContent=(cardIds)=>{
+    const GetMulContent=(cardIds)=>{
         cardIds=JSON.stringify(cardIds)
         cardIds=JSON.parse(cardIds)
         let idInQuery=cardIds[0].cardId
@@ -103,21 +102,90 @@ exports.GetMulligan=(req,res)=>{
             cards.sort((a,b)=>{
                 return a.cardWinRate<b.cardWinRate ? 1:-1
             })
-            console.log(cards)
             resolve(cards)
+        })
+    }
+    const GetOppContent=()=>{
+        return new Promise((resolve,reject)=>{
+            const asyncFunc=async ()=>{
+                const browser=await puppeteer.launch()
+                try{
+                    const page=await browser.newPage()
+                    await page.setViewport({width:1366,height:768})
+                    await page.goto(`https://hsreplay.net/decks/#playerClasses=${opponentClass}`,{waitUntil: 'networkidle2'})
+                    const content=await page.content()
+                    browser.close()
+                    return content
+                }
+                catch(err)
+                {
+                    console.log(err)
+                    browser.close()
+                }
+            }
+            resolve(asyncFunc())
+        })
+    }
+
+    const GetDeckInfo=(content)=>{
+        return new Promise((resolve,reject)=>{
+            const $=cheerio.load(content)
+            let deckNames=$('.deck-name')
+            let deckGames=$('.game-count')
+            let decks=[]
+            for(let i=0;decks.length<3;i++) {
+                let deckName = $(deckNames[i]).text()
+                let deckGame = $(deckGames[i]).text()
+                let j=0
+                for(;j<decks.length;j++){
+                    if(deckName===decks[j].deckTitle)
+                        break
+                }
+                if(j===decks.length){
+                    decks.push({deckTitle:deckName,deckGame:deckGame})
+                }
+            }
+            console.log(decks)
+            resolve(decks)
         })
     }
     DataCheck()
         .then(GetCardId)
         //.then(CrawlerMulligan)
-        .then(GetContent)
+        .then(GetMulContent)
         .then(GetDeckHref)
         .then(GetDeckContent)
         .then(GetMulligan)
         .then((cards)=>{
             return new Promise((resolve,reject)=>{
-                console.log('cards in getMulligan : ',cards)
-                resolve(cards)
+                globalMulligan=cards
+                resolve()
+            })
+        })
+        .then(GetOppContent)
+        .then(GetDeckInfo)
+        .then((decks)=>{
+            return new Promise((resolve,reject)=>{
+                globalDecks=decks
+                resolve()
+            })
+        })
+        .then(()=>{
+            return new Promise((resolve,reject)=>{
+                let result={}
+                result.cards=globalMulligan
+                result.decks=globalDecks
+                resolve(result)
+            })
+        })
+        .then((result)=>{
+            console.log('result: ',result)
+            fs.readFile('./views/ejs/result.ejs','utf-8',(err,data)=>{
+                res.writeHead(200,{'Content-Type':'text/html'})
+                res.end(ejs.render(data,{
+                    cards:globalMulligan || [],
+                    decks:globalDecks || [],
+                }))
             })
         })
         .catch((err)=>{
