@@ -1,4 +1,4 @@
-const findById=require('../../database/user/findById')
+const findById=require('./findById')
 const bcrypt=require('bcrypt-nodejs')
 
 exports.Login=(req,res)=>{
@@ -39,7 +39,6 @@ exports.Login=(req,res)=>{
             })
         }
         if(bcrypt.compareSync(password,user[0].password)){
-            console.log(`Login : ${userId}`)
             req.session.sid=userId
             req.session.save(()=>{
                 res.status(200).json({userId:userId})

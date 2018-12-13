@@ -1,4 +1,4 @@
-const mysql=require('../mysql')
+const mysql=require('../../database/mysql')
 
 exports.findById=(userId)=>{
     return new Promise((resolve,reject)=>{
@@ -18,7 +18,6 @@ exports.findById=(userId)=>{
                 }
                 else{
                     connection.release()
-                    console.log('result in findById ',result)
                     resolve(result)
                 }
             })

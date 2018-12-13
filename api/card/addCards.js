@@ -26,7 +26,6 @@ exports.AddCards=(deckId,cards)=>{
                     let cardId = 0
                     for (let i = 0; i < cardEnUS.length; i++) {
                         if (cardEnUS[i].name === cardName) {
-                            console.log(cardEnUS[i].dbfId)
                             cardId = cardEnUS[i].dbfId
                             cardName=cardName.replace('\'','\'\'')
                             break

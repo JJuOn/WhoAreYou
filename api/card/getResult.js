@@ -1,4 +1,3 @@
-const crawler=require('./crawlerMulligan')
 const getCardId=require('./getCardId')
 const puppeteer=require('puppeteer')
 const cheerio=require('cheerio')
@@ -7,10 +6,8 @@ const ejs=require('ejs')
 let globalMulligan
 let globalDecks
 exports.GetResult=(req,res)=>{
-    const deckId=req.session.deckId || 113
-    console.log('deckId in getMulligan',deckId)
-    const opponentClass=req.session.opponentClass || 'PALADIN'
-    console.log('opponentClass in getMulligan',opponentClass)
+    const deckId=req.session.deckId
+    const opponentClass=req.session.opponentClass
     const DataCheck=()=>{
         return new Promise((resolve,reject)=>{
             if (!deckId || !opponentClass){
@@ -33,7 +30,6 @@ exports.GetResult=(req,res)=>{
         for(let i=1;i<cardIds.length ;i++){
             idInQuery+= '%2C'+cardIds[i].cardId
         }
-        console.log('idInQuery in crawlerMulligan ',idInQuery)
         return new Promise((resolve,reject)=>{
             const asyncFunc=async ()=>{
                 const browser=await puppeteer.launch()
@@ -60,7 +56,7 @@ exports.GetResult=(req,res)=>{
             const $=cheerio.load(content)
             let deck=$('#decks-container > div > main > div.deck-list > ul > li:nth-child(2)').find('a')
             const deckHref=$(deck).attr('href')
-            console.log('deckHref in crawlerMulligan :',deckHref)
+            console.log(deckHref)
             resolve(deckHref)
         })
     }
@@ -145,7 +141,6 @@ exports.GetResult=(req,res)=>{
                     decks.push({deckTitle:deckName,deckGame:deckGame})
                 }
             }
-            console.log(decks)
             resolve(decks)
         })
     }
@@ -179,7 +174,6 @@ exports.GetResult=(req,res)=>{
             })
         })
         .then((result)=>{
-            console.log('result: ',result)
             fs.readFile('./views/ejs/result.ejs','utf-8',(err,data)=>{
                 res.writeHead(200,{'Content-Type':'text/html'})
                 res.end(ejs.render(data,{

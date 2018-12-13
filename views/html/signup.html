@@ -28,7 +28,6 @@
                     data.userId=$('#userId').val()
                     data.password=$('#password').val()
                     const stringData=JSON.stringify(data)
-                    console.log(stringData)
                     $.ajax({
                         type:'POST',
                         url:'api/user/signup',

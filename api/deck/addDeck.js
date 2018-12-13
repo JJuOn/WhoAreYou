@@ -1,6 +1,4 @@
-const mysql=require('../mysql')
-
-let deckId
+const mysql=require('../../database/mysql')
 
 exports.AddDeck=(deckOwner,deckTitle,deckCode)=>{
     return new Promise((resolve,reject)=> {

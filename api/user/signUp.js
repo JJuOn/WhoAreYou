@@ -1,8 +1,4 @@
-'use strict'
-
-const express=require('express')
-const session=require('express-session')
-const findById=require('../../database/user/findById')
+const findById=require('./findById')
 const mysql=require('../../database/mysql')
 const bcrypt=require('bcrypt-nodejs')
 
@@ -25,7 +21,6 @@ exports.SignUp=(req,res)=>{
         const findUser=async ()=>{
             try{
                 user= await findById.findById(userId)
-                console.log(`user in UserCheck : ${JSON.stringify(user)}`)
                 return user
             }
             catch(err){

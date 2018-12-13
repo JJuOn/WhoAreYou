@@ -1,17 +1,15 @@
 const crawler=require('./crawlerDeckCodes')
 const cheerio=require('cheerio')
 const addCards=require('../card/addCards')
-const addDeck=require('../../database/deck/addDeck')
-const getDeckId=require('../../database/deck/getDeckId')
-let deckId=-1
+const addDeck=require('./addDeck')
+const getDeckId=require('./getDeckId')
 
 exports.NewDeck=(req,res)=>{
-    const deckOwner=req.session.sid || 'test'
+    const deckOwner=req.session.sid
     const deckTitle=req.body.deckTitle || new Date()
     let deckCode=req.body.deckCode
     let cards=[]
 
-    console.log(deckOwner,deckTitle,deckCode)
 
     const DataCheck=()=>{
         return new Promise((resolve,reject)=>{
@@ -62,7 +60,6 @@ exports.NewDeck=(req,res)=>{
         const asyncGetDeckId=async ()=>{
             try{
                 const results=await getDeckId.GetDeckId(deckOwner,deckTitle)
-                console.log(results)
                 return results
             }
             catch (err){
@@ -72,7 +69,6 @@ exports.NewDeck=(req,res)=>{
         return asyncGetDeckId()
     }
     const AddCards=(deckId)=>{
-        console.log(`deckid in AddCards : ${deckId}`)
         return addCards.AddCards(deckId,cards)
     }
 

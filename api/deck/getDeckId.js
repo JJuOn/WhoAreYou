@@ -1,4 +1,4 @@
-const mysql=require('../mysql')
+const mysql=require('../../database/mysql')
 
 exports.GetDeckId=(deckOwner,deckTitle)=>{
     return new Promise((resolve,reject)=>{
