@@ -1,5 +1,7 @@
 const mysql=require('../../database/mysql')
 
+//덱 ID를 바탕으로 해당 덱에 속해있는 모든 카드 반환
+//return: json array
 exports.GetCardId=(deckId)=>{
     return new Promise((resolve,reject)=>{
         mysql.getConnection((err,connection)=>{

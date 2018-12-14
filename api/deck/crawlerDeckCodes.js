@@ -2,6 +2,8 @@ const request=require('request')
 const iconv=require('iconv-lite')
 const charset=require('charset')
 
+//덱 추가시 deck.codes로부터 덱 코드가 의미하는 덱 정보 페이지 크롤링
+//return: html
 exports.Crawl=(deckCode)=>{
     return new Promise((resolve,reject)=>{
         request({

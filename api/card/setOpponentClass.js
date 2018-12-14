@@ -1,3 +1,5 @@
+//result 출력 전, 선택한 상대 직업을 세션에 저장
+//return: response status code
 exports.SetOpponentClass=(req,res)=>{
     const opponentClass=req.body.opponentClass
     const DataCheck=()=>{

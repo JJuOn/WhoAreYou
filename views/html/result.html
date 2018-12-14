@@ -18,32 +18,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            let mulligan,opponentDecks
-            $.ajax({
-                type:'GET',
-                url:'/api/card/getmulligan',
-                success:function(result){
-                    mulligan=result
-                    $('#yourMulligan').add('<ul>')
-                    for(let i=0;i<mulligan.length;i++){
-                        $('#yourMulligan').add(`<li><h4>카드 이름:${mulligan[i]['cardName']}</h4><br><h5>멀리건 승률:${mulligan[i]['cardWinRate']}</h5></li>`)
-                    }
-                    $('#yourMulligan').add('</ul>')
-                }
-            })
-            $.ajax({
-                type:'GET',
-                url:'/api/card/getopponent',
-                success:function(result){
-                    opponentDecks=result
-                    $('#opponentDecks').add('<ul>')
-                    for(let i=0;i<opponentDecks.length;i++){
-                        $('#opponentDecks').add(`<li><h4>덱 이름:${opponentDecks[i]['deckTitle']}</h4><br><h5>30일간 플레이 수:${opponentDecks[i]['deckGame']}</h5></li>`)
-                    }
-                    $('#opponentDecks').add('</ul>')
-                }
-            })
-
             $('#logoutButton').click(function(){
                 $.ajax({
                     type:'POST',
@@ -91,11 +65,37 @@
         <br>
         <br>
         <h3 class="form-signin-heading">상대편의 주요 덱</h3>
-        <div id="opponentDecks"></div>
+        <div id="opponentDecks">
+            <table class="table" style="text-align: center;">
+                <thead>
+                <td>덱 이름</td>
+                <td>플레이 수</td>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a class="list-group-item">덱이름1</a></td>
+                    <td><a class="list-group-item">10000</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <br>
         <br>
         <h3 class="form-signin-heading">내 덱의 추천 멀리건</h3>
-        <div id="yourMulligan"></div>
+        <div id="yourMulligan">
+            <table class="table" style="text-align: center;">
+                <thead>
+                <td>카드 이름</td>
+                <td>멀리건 승률</td>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a class="list-group-item">카드이름1</a></td>
+                    <td><a class="list-group-item">59.8</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
         <br>
         <br>
         <div class="row">

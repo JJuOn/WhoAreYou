@@ -1,5 +1,7 @@
 const mysql=require('../../database/mysql')
-
+//사용자의 아이디를 가지고 유저 검색,
+//return: 사용자가 있으면, 사용자 정보
+//        사용자가 없으면, 없음
 exports.findById=(userId)=>{
     return new Promise((resolve,reject)=>{
         mysql.getConnection((err,connection)=>{
